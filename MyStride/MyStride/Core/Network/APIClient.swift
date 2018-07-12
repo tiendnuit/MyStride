@@ -30,7 +30,7 @@ class APIClient {
     static let shared = APIClient()
     
     var pool: AWSCognitoIdentityUserPool!
-    var username = "user_id-" + UIDevice.current.identifierForVendor!.uuidString
+    var username = "user_id-" + UUID().uuidString//UIDevice.current.identifierForVendor!.uuidString
     var currentUser:AWSCognitoIdentityUser? {
         get {
             return self.pool.getUser(username)
@@ -85,6 +85,7 @@ class APIClient {
     
     //Signup (user registration)
     func signUp(userInfos: [AWSCognitoIdentityUserAttributeType]) -> Observable<Any> {
+        username = "user_id-" + UUID().uuidString
         return Observable.create({ [unowned self] (observer) -> Disposable in
             self.pool.signUp(self.username, password: "Stride@1234", userAttributes: userInfos, validationData: nil).continueWith { (task) -> Any? in
                 if let error = task.error as NSError? {
@@ -140,7 +141,7 @@ class APIClient {
     func requestSMSCode(phone: String) -> Observable<Any> {
         self.clearUser()
         let authParams = [
-            "USERNAME": username
+            "USERNAME": phone
         ]
         let req = AWSCognitoIdentityProviderInitiateAuthRequest()!
         req.authFlow = .customAuth

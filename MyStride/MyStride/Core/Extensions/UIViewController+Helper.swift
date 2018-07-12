@@ -84,7 +84,7 @@ extension UIViewController {
         self.navigationItem.rightBarButtonItems = buttons
     }
     
-    public func showBack(with title:String = "") {
+    public func showBack(with title:String = "Cancel") {
         self.navigationItem.leftBarButtonItem = generateBackAction(with: title)
     }
     

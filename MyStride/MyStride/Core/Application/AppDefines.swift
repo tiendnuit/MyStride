@@ -32,7 +32,7 @@ struct AppDefined {
     
     struct Amazon {
         static var PoolID = "us-east-1:5e5cd449-b057-4b66-b593-73a81c3f6cd4"
-        static var ClientID = "5en00ekameg4h3t1kdhv48m8hq"
+        static var ClientID = "1c2nh32aqirqkkskptg6gts4t4"//"5en00ekameg4h3t1kdhv48m8hq"
         static var UserPoolsSignInProviderKey = "UserPool"
         static var TokenKey = "cognito-idp.us-east-1.amazonaws.com/us-east-1_YA7NmvRlY"
         static var AuthenticatedLambdaKey = "AuthenticatedLambdaKey"
