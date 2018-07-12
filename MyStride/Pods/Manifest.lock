@@ -1,0 +1,60 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - AWSAPIGateway (2.6.22):
+    - AWSCore (= 2.6.22)
+  - AWSCognitoIdentityProvider (2.6.22):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.6.22)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.6.22)
+  - AWSLambda (2.6.22):
+    - AWSCore (= 2.6.22)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - AWSAPIGateway (~> 2.6.13)
+  - AWSCognitoIdentityProvider (~> 2.6.0)
+  - AWSCore (~> 2.6.0)
+  - AWSLambda
+  - R.swift
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ActionSheetPicker-3.0
+    - AWSAPIGateway
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSLambda
+    - R.swift
+    - R.swift.Library
+    - RxCocoa
+    - RxSwift
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  AWSAPIGateway: 7dad85e97b4431a78639bc8d47c8aba2bc4f3dd0
+  AWSCognitoIdentityProvider: f7d15744ca3d70270de05a212e501f29a4a06307
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: faae134779f0f6e46a8d426c0ccc02e34466b785
+  AWSLambda: d6d656a1188819892e5b1d8128890137f16f8429
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: cfaadd4245a14c7b8b2425bac1afe23af0927fe8
+
+COCOAPODS: 1.5.3

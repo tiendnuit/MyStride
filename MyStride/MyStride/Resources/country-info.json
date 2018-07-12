@@ -1,0 +1,2642 @@
+[
+  {
+    "countryCode": "AC",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 247,
+    "englishName": "Ascension Island",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "AD",
+    "languageCodes": [
+      "ca"
+    ],
+    "phonePrefix": 376,
+    "englishName": "Andorra",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "AE",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 971,
+    "englishName": "United Arab Emirates",
+    "nativeNames": [
+      "الإمارات العربية المتحدة"
+    ]
+  },
+  {
+    "countryCode": "AF",
+    "languageCodes": [
+      "fa",
+      "ps"
+    ],
+    "phonePrefix": 93,
+    "englishName": "Afghanistan",
+    "nativeNames": [
+      "افغانستان"
+    ]
+  },
+  {
+    "countryCode": "AG",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Antigua & Barbuda",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "AI",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Anguilla",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "AL",
+    "languageCodes": [
+      "sq"
+    ],
+    "phonePrefix": 355,
+    "englishName": "Albania",
+    "nativeNames": [
+      "Shqipëri"
+    ]
+  },
+  {
+    "countryCode": "AM",
+    "languageCodes": [
+      "hy"
+    ],
+    "phonePrefix": 374,
+    "englishName": "Armenia",
+    "nativeNames": [
+      "Հայաստան"
+    ]
+  },
+  {
+    "countryCode": "AO",
+    "languageCodes": [
+      "pt"
+    ],
+    "phonePrefix": 244,
+    "englishName": "Angola",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "AQ",
+    "languageCodes": [
+      "und"
+    ],
+    "phonePrefix": 672,
+    "englishName": "Antarctica",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "AR",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 54,
+    "englishName": "Argentina",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "AS",
+    "languageCodes": [
+      "sm",
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "American Samoa",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "AT",
+    "languageCodes": [
+      "de"
+    ],
+    "phonePrefix": 43,
+    "englishName": "Austria",
+    "nativeNames": [
+      "Österreich"
+    ]
+  },
+  {
+    "countryCode": "AU",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 61,
+    "englishName": "Australia",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "AW",
+    "languageCodes": [
+      "nl",
+      "pap"
+    ],
+    "phonePrefix": 297,
+    "englishName": "Aruba",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "AX",
+    "languageCodes": [
+      "sv"
+    ],
+    "phonePrefix": 358,
+    "englishName": "Åland Islands",
+    "nativeNames": [
+      "Åland"
+    ]
+  },
+  {
+    "countryCode": "AZ",
+    "languageCodes": [
+      "az",
+      "az_Cyrl"
+    ],
+    "phonePrefix": 994,
+    "englishName": "Azerbaijan",
+    "nativeNames": [
+      "Azərbaycan",
+      "Азәрбајҹан"
+    ]
+  },
+  {
+    "countryCode": "BA",
+    "languageCodes": [
+      "bs",
+      "bs_Cyrl",
+      "hr",
+      "sr",
+      "sr_Latn"
+    ],
+    "phonePrefix": 387,
+    "englishName": "Bosnia & Herzegovina",
+    "nativeNames": [
+      "Bosna i Hercegovina",
+      "Босна и Херцеговина"
+    ]
+  },
+  {
+    "countryCode": "BB",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Barbados",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "BD",
+    "languageCodes": [
+      "bn"
+    ],
+    "phonePrefix": 880,
+    "englishName": "Bangladesh",
+    "nativeNames": [
+      "বাংলাদেশ"
+    ]
+  },
+  {
+    "countryCode": "BE",
+    "languageCodes": [
+      "nl",
+      "fr",
+      "de"
+    ],
+    "phonePrefix": 32,
+    "englishName": "Belgium",
+    "nativeNames": [
+      "België",
+      "Belgique",
+      "Belgien"
+    ]
+  },
+  {
+    "countryCode": "BF",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 226,
+    "englishName": "Burkina Faso",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "BG",
+    "languageCodes": [
+      "bg"
+    ],
+    "phonePrefix": 359,
+    "englishName": "Bulgaria",
+    "nativeNames": [
+      "България"
+    ]
+  },
+  {
+    "countryCode": "BH",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 973,
+    "englishName": "Bahrain",
+    "nativeNames": [
+      "البحرين"
+    ]
+  },
+  {
+    "countryCode": "BI",
+    "languageCodes": [
+      "rn",
+      "fr",
+      "en"
+    ],
+    "phonePrefix": 257,
+    "englishName": "Burundi",
+    "nativeNames": [
+      "Uburundi"
+    ]
+  },
+  {
+    "countryCode": "BJ",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 229,
+    "englishName": "Benin",
+    "nativeNames": [
+      "Bénin"
+    ]
+  },
+  {
+    "countryCode": "BL",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 590,
+    "englishName": "St. Barthélemy",
+    "nativeNames": [
+      "Saint-Barthélemy"
+    ]
+  },
+  {
+    "countryCode": "BM",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Bermuda",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "BN",
+    "languageCodes": [
+      "ms",
+      "ms_Arab"
+    ],
+    "phonePrefix": 673,
+    "englishName": "Brunei",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "BO",
+    "languageCodes": [
+      "es",
+      "qu",
+      "ay"
+    ],
+    "phonePrefix": 591,
+    "englishName": "Bolivia",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "BQ",
+    "languageCodes": [
+      "nl"
+    ],
+    "phonePrefix": 599,
+    "englishName": "Caribbean Netherlands",
+    "nativeNames": [
+      "Caribisch Nederland"
+    ]
+  },
+  {
+    "countryCode": "BR",
+    "languageCodes": [
+      "pt"
+    ],
+    "phonePrefix": 55,
+    "englishName": "Brazil",
+    "nativeNames": [
+      "Brasil"
+    ]
+  },
+  {
+    "countryCode": "BS",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Bahamas",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "BT",
+    "languageCodes": [
+      "dz"
+    ],
+    "phonePrefix": 975,
+    "englishName": "Bhutan",
+    "nativeNames": [
+      "འབྲུག"
+    ]
+  },
+  {
+    "countryCode": "BW",
+    "languageCodes": [
+      "en",
+      "tn"
+    ],
+    "phonePrefix": 267,
+    "englishName": "Botswana",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "BY",
+    "languageCodes": [
+      "be",
+      "ru"
+    ],
+    "phonePrefix": 375,
+    "englishName": "Belarus",
+    "nativeNames": [
+      "Беларусь"
+    ]
+  },
+  {
+    "countryCode": "BZ",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 501,
+    "englishName": "Belize",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "CA",
+    "languageCodes": [
+      "en",
+      "fr"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Canada",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "CC",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 61,
+    "englishName": "Cocos (Keeling) Islands",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "CD",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 243,
+    "englishName": "Congo - Kinshasa",
+    "nativeNames": [
+      "Congo-Kinshasa"
+    ]
+  },
+  {
+    "countryCode": "CF",
+    "languageCodes": [
+      "fr",
+      "sg"
+    ],
+    "phonePrefix": 236,
+    "englishName": "Central African Republic",
+    "nativeNames": [
+      "République centrafricaine",
+      "Ködörösêse tî Bêafrîka"
+    ]
+  },
+  {
+    "countryCode": "CG",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 242,
+    "englishName": "Congo - Brazzaville",
+    "nativeNames": [
+      "Congo-Brazzaville"
+    ]
+  },
+  {
+    "countryCode": "CH",
+    "languageCodes": [
+      "de",
+      "gsw",
+      "fr",
+      "it"
+    ],
+    "phonePrefix": 41,
+    "englishName": "Switzerland",
+    "nativeNames": [
+      "Schweiz",
+      "Schwiiz",
+      "Suisse",
+      "Svizzera"
+    ]
+  },
+  {
+    "countryCode": "CI",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 225,
+    "englishName": "Côte d’Ivoire",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "CK",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 682,
+    "englishName": "Cook Islands",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "CL",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 56,
+    "englishName": "Chile",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "CM",
+    "languageCodes": [
+      "fr",
+      "en"
+    ],
+    "phonePrefix": 237,
+    "englishName": "Cameroon",
+    "nativeNames": [
+      "Cameroun"
+    ]
+  },
+  {
+    "countryCode": "CN",
+    "languageCodes": [
+      "zh"
+    ],
+    "phonePrefix": 86,
+    "englishName": "China",
+    "nativeNames": [
+      "中国"
+    ]
+  },
+  {
+    "countryCode": "CO",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 57,
+    "englishName": "Colombia",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "CR",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 506,
+    "englishName": "Costa Rica",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "CU",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 53,
+    "englishName": "Cuba",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "CV",
+    "languageCodes": [
+      "pt"
+    ],
+    "phonePrefix": 238,
+    "englishName": "Cape Verde",
+    "nativeNames": [
+      "Cabo Verde"
+    ]
+  },
+  {
+    "countryCode": "CW",
+    "languageCodes": [
+      "pap",
+      "nl"
+    ],
+    "phonePrefix": 599,
+    "englishName": "Curaçao",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "CX",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 61,
+    "englishName": "Christmas Island",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "CY",
+    "languageCodes": [
+      "el",
+      "tr"
+    ],
+    "phonePrefix": 357,
+    "englishName": "Cyprus",
+    "nativeNames": [
+      "Κύπρος",
+      "Kıbrıs"
+    ]
+  },
+  {
+    "countryCode": "CZ",
+    "languageCodes": [
+      "cs"
+    ],
+    "phonePrefix": 420,
+    "englishName": "Czechia",
+    "nativeNames": [
+      "Česko"
+    ]
+  },
+  {
+    "countryCode": "DE",
+    "languageCodes": [
+      "de"
+    ],
+    "phonePrefix": 49,
+    "englishName": "Germany",
+    "nativeNames": [
+      "Deutschland"
+    ]
+  },
+  {
+    "countryCode": "DJ",
+    "languageCodes": [
+      "ar",
+      "fr"
+    ],
+    "phonePrefix": 253,
+    "englishName": "Djibouti",
+    "nativeNames": [
+      "جيبوتي"
+    ]
+  },
+  {
+    "countryCode": "DK",
+    "languageCodes": [
+      "da"
+    ],
+    "phonePrefix": 45,
+    "englishName": "Denmark",
+    "nativeNames": [
+      "Danmark"
+    ]
+  },
+  {
+    "countryCode": "DM",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Dominica",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "DO",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Dominican Republic",
+    "nativeNames": [
+      "República Dominicana"
+    ]
+  },
+  {
+    "countryCode": "DZ",
+    "languageCodes": [
+      "ar",
+      "fr"
+    ],
+    "phonePrefix": 213,
+    "englishName": "Algeria",
+    "nativeNames": [
+      "الجزائر",
+      "Algérie"
+    ]
+  },
+  {
+    "countryCode": "EC",
+    "languageCodes": [
+      "es",
+      "qu"
+    ],
+    "phonePrefix": 593,
+    "englishName": "Ecuador",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "EE",
+    "languageCodes": [
+      "et"
+    ],
+    "phonePrefix": 372,
+    "englishName": "Estonia",
+    "nativeNames": [
+      "Eesti"
+    ]
+  },
+  {
+    "countryCode": "EG",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 20,
+    "englishName": "Egypt",
+    "nativeNames": [
+      "مصر"
+    ]
+  },
+  {
+    "countryCode": "EH",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 212,
+    "englishName": "Western Sahara",
+    "nativeNames": [
+      "الصحراء الغربية"
+    ]
+  },
+  {
+    "countryCode": "ER",
+    "languageCodes": [
+      "ti",
+      "en",
+      "ar"
+    ],
+    "phonePrefix": 291,
+    "englishName": "Eritrea",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "ES",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 34,
+    "englishName": "Spain",
+    "nativeNames": [
+      "España"
+    ]
+  },
+  {
+    "countryCode": "ET",
+    "languageCodes": [
+      "am"
+    ],
+    "phonePrefix": 251,
+    "englishName": "Ethiopia",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "FI",
+    "languageCodes": [
+      "fi",
+      "sv"
+    ],
+    "phonePrefix": 358,
+    "englishName": "Finland",
+    "nativeNames": [
+      "Suomi"
+    ]
+  },
+  {
+    "countryCode": "FJ",
+    "languageCodes": [
+      "en",
+      "hif",
+      "fj"
+    ],
+    "phonePrefix": 679,
+    "englishName": "Fiji",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "FK",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 500,
+    "englishName": "Falkland Islands",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "FM",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 691,
+    "englishName": "Micronesia",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "FO",
+    "languageCodes": [
+      "fo"
+    ],
+    "phonePrefix": 298,
+    "englishName": "Faroe Islands",
+    "nativeNames": [
+      "Føroyar"
+    ]
+  },
+  {
+    "countryCode": "FR",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 33,
+    "englishName": "France",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "GA",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 241,
+    "englishName": "Gabon",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "GB",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 44,
+    "englishName": "United Kingdom",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "GD",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Grenada",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "GE",
+    "languageCodes": [
+      "ka"
+    ],
+    "phonePrefix": 995,
+    "englishName": "Georgia",
+    "nativeNames": [
+      "საქართველო"
+    ]
+  },
+  {
+    "countryCode": "GF",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 594,
+    "englishName": "French Guiana",
+    "nativeNames": [
+      "Guyane française"
+    ]
+  },
+  {
+    "countryCode": "GG",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 44,
+    "englishName": "Guernsey",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "GH",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 233,
+    "englishName": "Ghana",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "GI",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 350,
+    "englishName": "Gibraltar",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "GL",
+    "languageCodes": [
+      "kl"
+    ],
+    "phonePrefix": 299,
+    "englishName": "Greenland",
+    "nativeNames": [
+      "Kalaallit Nunaat"
+    ]
+  },
+  {
+    "countryCode": "GM",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 220,
+    "englishName": "Gambia",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "GN",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 224,
+    "englishName": "Guinea",
+    "nativeNames": [
+      "Guinée"
+    ]
+  },
+  {
+    "countryCode": "GP",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 590,
+    "englishName": "Guadeloupe",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "GQ",
+    "languageCodes": [
+      "es",
+      "fr",
+      "pt"
+    ],
+    "phonePrefix": 240,
+    "englishName": "Equatorial Guinea",
+    "nativeNames": [
+      "Guinea Ecuatorial",
+      "Guinée équatoriale",
+      "Guiné Equatorial"
+    ]
+  },
+  {
+    "countryCode": "GR",
+    "languageCodes": [
+      "el"
+    ],
+    "phonePrefix": 30,
+    "englishName": "Greece",
+    "nativeNames": [
+      "Ελλάδα"
+    ]
+  },
+  {
+    "countryCode": "GS",
+    "languageCodes": [
+      "und"
+    ],
+    "phonePrefix": 500,
+    "englishName": "South Georgia & South Sandwich Islands",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "GT",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 502,
+    "englishName": "Guatemala",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "GU",
+    "languageCodes": [
+      "en",
+      "ch"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Guam",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "GW",
+    "languageCodes": [
+      "pt"
+    ],
+    "phonePrefix": 245,
+    "englishName": "Guinea-Bissau",
+    "nativeNames": [
+      "Guiné-Bissau"
+    ]
+  },
+  {
+    "countryCode": "GY",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 592,
+    "englishName": "Guyana",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "HK",
+    "languageCodes": [
+      "zh_Hant",
+      "en"
+    ],
+    "phonePrefix": 852,
+    "englishName": "Hong Kong SAR China",
+    "nativeNames": [
+      "中國香港特別行政區"
+    ]
+  },
+  {
+    "countryCode": "HN",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 504,
+    "englishName": "Honduras",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "HR",
+    "languageCodes": [
+      "hr"
+    ],
+    "phonePrefix": 385,
+    "englishName": "Croatia",
+    "nativeNames": [
+      "Hrvatska"
+    ]
+  },
+  {
+    "countryCode": "HT",
+    "languageCodes": [
+      "ht",
+      "fr"
+    ],
+    "phonePrefix": 509,
+    "englishName": "Haiti",
+    "nativeNames": [
+      "Haïti"
+    ]
+  },
+  {
+    "countryCode": "HU",
+    "languageCodes": [
+      "hu"
+    ],
+    "phonePrefix": 36,
+    "englishName": "Hungary",
+    "nativeNames": [
+      "Magyarország"
+    ]
+  },
+  {
+    "countryCode": "ID",
+    "languageCodes": [
+      "id"
+    ],
+    "phonePrefix": 62,
+    "englishName": "Indonesia",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "IE",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 353,
+    "englishName": "Ireland",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "IL",
+    "languageCodes": [
+      "he",
+      "ar"
+    ],
+    "phonePrefix": 972,
+    "englishName": "Israel",
+    "nativeNames": [
+      "ישראל",
+      "إسرائيل"
+    ]
+  },
+  {
+    "countryCode": "IM",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 44,
+    "englishName": "Isle of Man",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "IN",
+    "languageCodes": [
+      "hi",
+      "en"
+    ],
+    "phonePrefix": 91,
+    "englishName": "India",
+    "nativeNames": [
+      "भारत"
+    ]
+  },
+  {
+    "countryCode": "IO",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 246,
+    "englishName": "British Indian Ocean Territory",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "IQ",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 964,
+    "englishName": "Iraq",
+    "nativeNames": [
+      "العراق"
+    ]
+  },
+  {
+    "countryCode": "IR",
+    "languageCodes": [
+      "fa"
+    ],
+    "phonePrefix": 98,
+    "englishName": "Iran",
+    "nativeNames": [
+      "ایران"
+    ]
+  },
+  {
+    "countryCode": "IS",
+    "languageCodes": [
+      "is"
+    ],
+    "phonePrefix": 354,
+    "englishName": "Iceland",
+    "nativeNames": [
+      "Ísland"
+    ]
+  },
+  {
+    "countryCode": "IT",
+    "languageCodes": [
+      "it"
+    ],
+    "phonePrefix": 39,
+    "englishName": "Italy",
+    "nativeNames": [
+      "Italia"
+    ]
+  },
+  {
+    "countryCode": "JE",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 44,
+    "englishName": "Jersey",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "JM",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Jamaica",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "JO",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 962,
+    "englishName": "Jordan",
+    "nativeNames": [
+      "الأردن"
+    ]
+  },
+  {
+    "countryCode": "JP",
+    "languageCodes": [
+      "ja"
+    ],
+    "phonePrefix": 81,
+    "englishName": "Japan",
+    "nativeNames": [
+      "日本"
+    ]
+  },
+  {
+    "countryCode": "KE",
+    "languageCodes": [
+      "sw",
+      "en"
+    ],
+    "phonePrefix": 254,
+    "englishName": "Kenya",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "KG",
+    "languageCodes": [
+      "ky",
+      "ru"
+    ],
+    "phonePrefix": 996,
+    "englishName": "Kyrgyzstan",
+    "nativeNames": [
+      "Кыргызстан",
+      "Киргизия"
+    ]
+  },
+  {
+    "countryCode": "KH",
+    "languageCodes": [
+      "km"
+    ],
+    "phonePrefix": 855,
+    "englishName": "Cambodia",
+    "nativeNames": [
+      "កម្ពុជា"
+    ]
+  },
+  {
+    "countryCode": "KI",
+    "languageCodes": [
+      "en",
+      "gil"
+    ],
+    "phonePrefix": 686,
+    "englishName": "Kiribati",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "KM",
+    "languageCodes": [
+      "ar",
+      "fr",
+      "zdj",
+      "wni"
+    ],
+    "phonePrefix": 269,
+    "englishName": "Comoros",
+    "nativeNames": [
+      "جزر القمر",
+      "Comores"
+    ]
+  },
+  {
+    "countryCode": "KN",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "St. Kitts & Nevis",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "KP",
+    "languageCodes": [
+      "ko"
+    ],
+    "phonePrefix": 850,
+    "englishName": "North Korea",
+    "nativeNames": [
+      "북한"
+    ]
+  },
+  {
+    "countryCode": "KR",
+    "languageCodes": [
+      "ko"
+    ],
+    "phonePrefix": 82,
+    "englishName": "South Korea",
+    "nativeNames": [
+      "대한민국"
+    ]
+  },
+  {
+    "countryCode": "KW",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 965,
+    "englishName": "Kuwait",
+    "nativeNames": [
+      "الكويت"
+    ]
+  },
+  {
+    "countryCode": "KY",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Cayman Islands",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "KZ",
+    "languageCodes": [
+      "ru",
+      "kk"
+    ],
+    "phonePrefix": 7,
+    "englishName": "Kazakhstan",
+    "nativeNames": [
+      "Казахстан",
+      "Қазақстан"
+    ]
+  },
+  {
+    "countryCode": "LA",
+    "languageCodes": [
+      "lo"
+    ],
+    "phonePrefix": 856,
+    "englishName": "Laos",
+    "nativeNames": [
+      "ລາວ"
+    ]
+  },
+  {
+    "countryCode": "LB",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 961,
+    "englishName": "Lebanon",
+    "nativeNames": [
+      "لبنان"
+    ]
+  },
+  {
+    "countryCode": "LC",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "St. Lucia",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "LI",
+    "languageCodes": [
+      "de",
+      "gsw"
+    ],
+    "phonePrefix": 423,
+    "englishName": "Liechtenstein",
+    "nativeNames": [
+      "Liächteschtäi"
+    ]
+  },
+  {
+    "countryCode": "LK",
+    "languageCodes": [
+      "si",
+      "ta"
+    ],
+    "phonePrefix": 94,
+    "englishName": "Sri Lanka",
+    "nativeNames": [
+      "ශ්‍රී ලංකාව",
+      "இலங்கை"
+    ]
+  },
+  {
+    "countryCode": "LR",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 231,
+    "englishName": "Liberia",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "LS",
+    "languageCodes": [
+      "st",
+      "en"
+    ],
+    "phonePrefix": 266,
+    "englishName": "Lesotho",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "LT",
+    "languageCodes": [
+      "lt"
+    ],
+    "phonePrefix": 370,
+    "englishName": "Lithuania",
+    "nativeNames": [
+      "Lietuva"
+    ]
+  },
+  {
+    "countryCode": "LU",
+    "languageCodes": [
+      "fr",
+      "lb",
+      "de"
+    ],
+    "phonePrefix": 352,
+    "englishName": "Luxembourg",
+    "nativeNames": [
+      "Lëtzebuerg",
+      "Luxemburg"
+    ]
+  },
+  {
+    "countryCode": "LV",
+    "languageCodes": [
+      "lv"
+    ],
+    "phonePrefix": 371,
+    "englishName": "Latvia",
+    "nativeNames": [
+      "Latvija"
+    ]
+  },
+  {
+    "countryCode": "LY",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 218,
+    "englishName": "Libya",
+    "nativeNames": [
+      "ليبيا"
+    ]
+  },
+  {
+    "countryCode": "MA",
+    "languageCodes": [
+      "ar",
+      "fr",
+      "tzm"
+    ],
+    "phonePrefix": 212,
+    "englishName": "Morocco",
+    "nativeNames": [
+      "المغرب",
+      "Maroc",
+      "Meṛṛuk"
+    ]
+  },
+  {
+    "countryCode": "MC",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 377,
+    "englishName": "Monaco",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "MD",
+    "languageCodes": [
+      "ro"
+    ],
+    "phonePrefix": 373,
+    "englishName": "Moldova",
+    "nativeNames": [
+      "Republica Moldova"
+    ]
+  },
+  {
+    "countryCode": "ME",
+    "languageCodes": [
+      "sr_Latn"
+    ],
+    "phonePrefix": 382,
+    "englishName": "Montenegro",
+    "nativeNames": [
+      "Crna Gora"
+    ]
+  },
+  {
+    "countryCode": "MF",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 590,
+    "englishName": "St. Martin",
+    "nativeNames": [
+      "Saint-Martin"
+    ]
+  },
+  {
+    "countryCode": "MG",
+    "languageCodes": [
+      "mg",
+      "fr",
+      "en"
+    ],
+    "phonePrefix": 261,
+    "englishName": "Madagascar",
+    "nativeNames": [
+      "Madagasikara"
+    ]
+  },
+  {
+    "countryCode": "MH",
+    "languageCodes": [
+      "en",
+      "mh"
+    ],
+    "phonePrefix": 692,
+    "englishName": "Marshall Islands",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "MK",
+    "languageCodes": [
+      "mk"
+    ],
+    "phonePrefix": 389,
+    "englishName": "Macedonia",
+    "nativeNames": [
+      "Македонија"
+    ]
+  },
+  {
+    "countryCode": "ML",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 223,
+    "englishName": "Mali",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "MM",
+    "languageCodes": [
+      "my"
+    ],
+    "phonePrefix": 95,
+    "englishName": "Myanmar (Burma)",
+    "nativeNames": [
+      "မြန်မာ"
+    ]
+  },
+  {
+    "countryCode": "MN",
+    "languageCodes": [
+      "mn"
+    ],
+    "phonePrefix": 976,
+    "englishName": "Mongolia",
+    "nativeNames": [
+      "Монгол"
+    ]
+  },
+  {
+    "countryCode": "MO",
+    "languageCodes": [
+      "zh_Hant",
+      "pt"
+    ],
+    "phonePrefix": 853,
+    "englishName": "Macau SAR China",
+    "nativeNames": [
+      "中國澳門特別行政區",
+      "Macau, RAE da China"
+    ]
+  },
+  {
+    "countryCode": "MP",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Northern Mariana Islands",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "MQ",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 596,
+    "englishName": "Martinique",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "MR",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 222,
+    "englishName": "Mauritania",
+    "nativeNames": [
+      "موريتانيا"
+    ]
+  },
+  {
+    "countryCode": "MS",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Montserrat",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "MT",
+    "languageCodes": [
+      "mt",
+      "en"
+    ],
+    "phonePrefix": 356,
+    "englishName": "Malta",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "MU",
+    "languageCodes": [
+      "en",
+      "fr"
+    ],
+    "phonePrefix": 230,
+    "englishName": "Mauritius",
+    "nativeNames": [
+      "Maurice"
+    ]
+  },
+  {
+    "countryCode": "MV",
+    "languageCodes": [
+      "dv"
+    ],
+    "phonePrefix": 960,
+    "englishName": "Maldives",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "MW",
+    "languageCodes": [
+      "en",
+      "ny"
+    ],
+    "phonePrefix": 265,
+    "englishName": "Malawi",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "MX",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 52,
+    "englishName": "Mexico",
+    "nativeNames": [
+      "México"
+    ]
+  },
+  {
+    "countryCode": "MY",
+    "languageCodes": [
+      "ms"
+    ],
+    "phonePrefix": 60,
+    "englishName": "Malaysia",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "MZ",
+    "languageCodes": [
+      "pt"
+    ],
+    "phonePrefix": 258,
+    "englishName": "Mozambique",
+    "nativeNames": [
+      "Moçambique"
+    ]
+  },
+  {
+    "countryCode": "NA",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 264,
+    "englishName": "Namibia",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "NC",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 687,
+    "englishName": "New Caledonia",
+    "nativeNames": [
+      "Nouvelle-Calédonie"
+    ]
+  },
+  {
+    "countryCode": "NE",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 227,
+    "englishName": "Niger",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "NF",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 672,
+    "englishName": "Norfolk Island",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "NG",
+    "languageCodes": [
+      "en",
+      "yo"
+    ],
+    "phonePrefix": 234,
+    "englishName": "Nigeria",
+    "nativeNames": [
+      "Orílẹ́ède Nàìjíríà"
+    ]
+  },
+  {
+    "countryCode": "NI",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 505,
+    "englishName": "Nicaragua",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "NL",
+    "languageCodes": [
+      "nl"
+    ],
+    "phonePrefix": 31,
+    "englishName": "Netherlands",
+    "nativeNames": [
+      "Nederland"
+    ]
+  },
+  {
+    "countryCode": "NO",
+    "languageCodes": [
+      "nb",
+      "nn"
+    ],
+    "phonePrefix": 47,
+    "englishName": "Norway",
+    "nativeNames": [
+      "Norge",
+      "Noreg"
+    ]
+  },
+  {
+    "countryCode": "NP",
+    "languageCodes": [
+      "ne"
+    ],
+    "phonePrefix": 977,
+    "englishName": "Nepal",
+    "nativeNames": [
+      "नेपाल"
+    ]
+  },
+  {
+    "countryCode": "NR",
+    "languageCodes": [
+      "en",
+      "na"
+    ],
+    "phonePrefix": 674,
+    "englishName": "Nauru",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "NU",
+    "languageCodes": [
+      "en",
+      "niu"
+    ],
+    "phonePrefix": 683,
+    "englishName": "Niue",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "NZ",
+    "languageCodes": [
+      "en",
+      "mi"
+    ],
+    "phonePrefix": 64,
+    "englishName": "New Zealand",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "OM",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 968,
+    "englishName": "Oman",
+    "nativeNames": [
+      "عُمان"
+    ]
+  },
+  {
+    "countryCode": "PA",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 507,
+    "englishName": "Panama",
+    "nativeNames": [
+      "Panamá"
+    ]
+  },
+  {
+    "countryCode": "PE",
+    "languageCodes": [
+      "es",
+      "qu"
+    ],
+    "phonePrefix": 51,
+    "englishName": "Peru",
+    "nativeNames": [
+      "Perú"
+    ]
+  },
+  {
+    "countryCode": "PF",
+    "languageCodes": [
+      "fr",
+      "ty"
+    ],
+    "phonePrefix": 689,
+    "englishName": "French Polynesia",
+    "nativeNames": [
+      "Polynésie française"
+    ]
+  },
+  {
+    "countryCode": "PG",
+    "languageCodes": [
+      "tpi",
+      "en",
+      "ho"
+    ],
+    "phonePrefix": 675,
+    "englishName": "Papua New Guinea",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "PH",
+    "languageCodes": [
+      "en",
+      "fil"
+    ],
+    "phonePrefix": 63,
+    "englishName": "Philippines",
+    "nativeNames": [
+      "Pilipinas"
+    ]
+  },
+  {
+    "countryCode": "PK",
+    "languageCodes": [
+      "ur",
+      "en"
+    ],
+    "phonePrefix": 92,
+    "englishName": "Pakistan",
+    "nativeNames": [
+      "پاکستان"
+    ]
+  },
+  {
+    "countryCode": "PL",
+    "languageCodes": [
+      "pl"
+    ],
+    "phonePrefix": 48,
+    "englishName": "Poland",
+    "nativeNames": [
+      "Polska"
+    ]
+  },
+  {
+    "countryCode": "PM",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 508,
+    "englishName": "St. Pierre & Miquelon",
+    "nativeNames": [
+      "Saint-Pierre-et-Miquelon"
+    ]
+  },
+  {
+    "countryCode": "PN",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 870,
+    "englishName": "Pitcairn Islands",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "PR",
+    "languageCodes": [
+      "es",
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Puerto Rico",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "PS",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 972,
+    "englishName": "Palestinian Territories",
+    "nativeNames": [
+      "الأراضي الفلسطينية"
+    ]
+  },
+  {
+    "countryCode": "PT",
+    "languageCodes": [
+      "pt"
+    ],
+    "phonePrefix": 351,
+    "englishName": "Portugal",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "PW",
+    "languageCodes": [
+      "pau",
+      "en"
+    ],
+    "phonePrefix": 680,
+    "englishName": "Palau",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "PY",
+    "languageCodes": [
+      "gn",
+      "es"
+    ],
+    "phonePrefix": 595,
+    "englishName": "Paraguay",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "QA",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 974,
+    "englishName": "Qatar",
+    "nativeNames": [
+      "قطر"
+    ]
+  },
+  {
+    "countryCode": "RE",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 262,
+    "englishName": "Réunion",
+    "nativeNames": [
+      "La Réunion"
+    ]
+  },
+  {
+    "countryCode": "RO",
+    "languageCodes": [
+      "ro"
+    ],
+    "phonePrefix": 40,
+    "englishName": "Romania",
+    "nativeNames": [
+      "România"
+    ]
+  },
+  {
+    "countryCode": "RS",
+    "languageCodes": [
+      "sr",
+      "sr_Latn"
+    ],
+    "phonePrefix": 381,
+    "englishName": "Serbia",
+    "nativeNames": [
+      "Србија",
+      "Srbija"
+    ]
+  },
+  {
+    "countryCode": "RU",
+    "languageCodes": [
+      "ru"
+    ],
+    "phonePrefix": 7,
+    "englishName": "Russia",
+    "nativeNames": [
+      "Россия"
+    ]
+  },
+  {
+    "countryCode": "RW",
+    "languageCodes": [
+      "rw",
+      "en",
+      "fr"
+    ],
+    "phonePrefix": 250,
+    "englishName": "Rwanda",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "SA",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 966,
+    "englishName": "Saudi Arabia",
+    "nativeNames": [
+      "المملكة العربية السعودية"
+    ]
+  },
+  {
+    "countryCode": "SB",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 677,
+    "englishName": "Solomon Islands",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "SC",
+    "languageCodes": [
+      "fr",
+      "en"
+    ],
+    "phonePrefix": 248,
+    "englishName": "Seychelles",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "SD",
+    "languageCodes": [
+      "ar",
+      "en"
+    ],
+    "phonePrefix": 249,
+    "englishName": "Sudan",
+    "nativeNames": [
+      "السودان"
+    ]
+  },
+  {
+    "countryCode": "SE",
+    "languageCodes": [
+      "sv"
+    ],
+    "phonePrefix": 46,
+    "englishName": "Sweden",
+    "nativeNames": [
+      "Sverige"
+    ]
+  },
+  {
+    "countryCode": "SG",
+    "languageCodes": [
+      "en",
+      "zh",
+      "ms",
+      "ta"
+    ],
+    "phonePrefix": 65,
+    "englishName": "Singapore",
+    "nativeNames": [
+      "新加坡",
+      "Singapura",
+      "சிங்கப்பூர்"
+    ]
+  },
+  {
+    "countryCode": "SH",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 290,
+    "englishName": "St. Helena",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "SI",
+    "languageCodes": [
+      "sl"
+    ],
+    "phonePrefix": 386,
+    "englishName": "Slovenia",
+    "nativeNames": [
+      "Slovenija"
+    ]
+  },
+  {
+    "countryCode": "SJ",
+    "languageCodes": [
+      "nb"
+    ],
+    "phonePrefix": 47,
+    "englishName": "Svalbard & Jan Mayen",
+    "nativeNames": [
+      "Svalbard og Jan Mayen"
+    ]
+  },
+  {
+    "countryCode": "SK",
+    "languageCodes": [
+      "sk"
+    ],
+    "phonePrefix": 421,
+    "englishName": "Slovakia",
+    "nativeNames": [
+      "Slovensko"
+    ]
+  },
+  {
+    "countryCode": "SL",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 232,
+    "englishName": "Sierra Leone",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "SM",
+    "languageCodes": [
+      "it"
+    ],
+    "phonePrefix": 378,
+    "englishName": "San Marino",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "SN",
+    "languageCodes": [
+      "wo",
+      "fr"
+    ],
+    "phonePrefix": 221,
+    "englishName": "Senegal",
+    "nativeNames": [
+      "Sénégal"
+    ]
+  },
+  {
+    "countryCode": "SO",
+    "languageCodes": [
+      "so",
+      "ar"
+    ],
+    "phonePrefix": 252,
+    "englishName": "Somalia",
+    "nativeNames": [
+      "Soomaaliya",
+      "الصومال"
+    ]
+  },
+  {
+    "countryCode": "SR",
+    "languageCodes": [
+      "nl"
+    ],
+    "phonePrefix": 597,
+    "englishName": "Suriname",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "SS",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 211,
+    "englishName": "South Sudan",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "ST",
+    "languageCodes": [
+      "pt"
+    ],
+    "phonePrefix": 239,
+    "englishName": "São Tomé & Príncipe",
+    "nativeNames": [
+      "São Tomé e Príncipe"
+    ]
+  },
+  {
+    "countryCode": "SV",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 503,
+    "englishName": "El Salvador",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "SX",
+    "languageCodes": [
+      "en",
+      "nl"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Sint Maarten",
+    "nativeNames": [
+      "Sint-Maarten"
+    ]
+  },
+  {
+    "countryCode": "SY",
+    "languageCodes": [
+      "ar",
+      "fr"
+    ],
+    "phonePrefix": 963,
+    "englishName": "Syria",
+    "nativeNames": [
+      "سوريا",
+      "Syrie"
+    ]
+  },
+  {
+    "countryCode": "SZ",
+    "languageCodes": [
+      "en",
+      "ss"
+    ],
+    "phonePrefix": 268,
+    "englishName": "Swaziland",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "TC",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Turks & Caicos Islands",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "TD",
+    "languageCodes": [
+      "fr",
+      "ar"
+    ],
+    "phonePrefix": 235,
+    "englishName": "Chad",
+    "nativeNames": [
+      "Tchad",
+      "تشاد"
+    ]
+  },
+  {
+    "countryCode": "TF",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 262,
+    "englishName": "French Southern Territories",
+    "nativeNames": [
+      "Terres australes françaises"
+    ]
+  },
+  {
+    "countryCode": "TG",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 228,
+    "englishName": "Togo",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "TH",
+    "languageCodes": [
+      "th"
+    ],
+    "phonePrefix": 66,
+    "englishName": "Thailand",
+    "nativeNames": [
+      "ไทย"
+    ]
+  },
+  {
+    "countryCode": "TJ",
+    "languageCodes": [
+      "tg"
+    ],
+    "phonePrefix": 992,
+    "englishName": "Tajikistan",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "TK",
+    "languageCodes": [
+      "en",
+      "tkl"
+    ],
+    "phonePrefix": 690,
+    "englishName": "Tokelau",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "TL",
+    "languageCodes": [
+      "pt",
+      "tet"
+    ],
+    "phonePrefix": 670,
+    "englishName": "Timor-Leste",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "TM",
+    "languageCodes": [
+      "tk"
+    ],
+    "phonePrefix": 993,
+    "englishName": "Turkmenistan",
+    "nativeNames": [
+      "Türkmenistan"
+    ]
+  },
+  {
+    "countryCode": "TN",
+    "languageCodes": [
+      "ar",
+      "fr"
+    ],
+    "phonePrefix": 216,
+    "englishName": "Tunisia",
+    "nativeNames": [
+      "تونس",
+      "Tunisie"
+    ]
+  },
+  {
+    "countryCode": "TO",
+    "languageCodes": [
+      "to",
+      "en"
+    ],
+    "phonePrefix": 676,
+    "englishName": "Tonga",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "TR",
+    "languageCodes": [
+      "tr"
+    ],
+    "phonePrefix": 90,
+    "englishName": "Turkey",
+    "nativeNames": [
+      "Türkiye"
+    ]
+  },
+  {
+    "countryCode": "TT",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "Trinidad & Tobago",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "TV",
+    "languageCodes": [
+      "tvl",
+      "en"
+    ],
+    "phonePrefix": 688,
+    "englishName": "Tuvalu",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "TW",
+    "languageCodes": [
+      "zh_Hant"
+    ],
+    "phonePrefix": 886,
+    "englishName": "Taiwan",
+    "nativeNames": [
+      "台灣"
+    ]
+  },
+  {
+    "countryCode": "TZ",
+    "languageCodes": [
+      "sw",
+      "en"
+    ],
+    "phonePrefix": 255,
+    "englishName": "Tanzania",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "UA",
+    "languageCodes": [
+      "uk",
+      "ru"
+    ],
+    "phonePrefix": 380,
+    "englishName": "Ukraine",
+    "nativeNames": [
+      "Україна",
+      "Украина"
+    ]
+  },
+  {
+    "countryCode": "UG",
+    "languageCodes": [
+      "sw",
+      "en"
+    ],
+    "phonePrefix": 256,
+    "englishName": "Uganda",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "UM",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "U.S. Outlying Islands",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "US",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "United States",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "UY",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 598,
+    "englishName": "Uruguay",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "UZ",
+    "languageCodes": [
+      "uz",
+      "uz_Cyrl"
+    ],
+    "phonePrefix": 998,
+    "englishName": "Uzbekistan",
+    "nativeNames": [
+      "Oʻzbekiston",
+      "Ўзбекистон"
+    ]
+  },
+  {
+    "countryCode": "VA",
+    "languageCodes": [
+      "it"
+    ],
+    "phonePrefix": 39,
+    "englishName": "Vatican City",
+    "nativeNames": [
+      "Città del Vaticano"
+    ]
+  },
+  {
+    "countryCode": "VC",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "St. Vincent & Grenadines",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "VE",
+    "languageCodes": [
+      "es"
+    ],
+    "phonePrefix": 58,
+    "englishName": "Venezuela",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "VG",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "British Virgin Islands",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "VI",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 1,
+    "englishName": "U.S. Virgin Islands",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "VN",
+    "languageCodes": [
+      "vi"
+    ],
+    "phonePrefix": 84,
+    "englishName": "Vietnam",
+    "nativeNames": [
+      "Việt Nam"
+    ]
+  },
+  {
+    "countryCode": "VU",
+    "languageCodes": [
+      "bi",
+      "en",
+      "fr"
+    ],
+    "phonePrefix": 678,
+    "englishName": "Vanuatu",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "WF",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 681,
+    "englishName": "Wallis & Futuna",
+    "nativeNames": [
+      "Wallis-et-Futuna"
+    ]
+  },
+  {
+    "countryCode": "WS",
+    "languageCodes": [
+      "sm",
+      "en"
+    ],
+    "phonePrefix": 685,
+    "englishName": "Samoa",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "XK",
+    "languageCodes": [
+      "sq",
+      "sr",
+      "sr_Latn"
+    ],
+    "phonePrefix": 377,
+    "englishName": "Kosovo",
+    "nativeNames": [
+      "Kosovë",
+      "Косово"
+    ]
+  },
+  {
+    "countryCode": "YE",
+    "languageCodes": [
+      "ar"
+    ],
+    "phonePrefix": 967,
+    "englishName": "Yemen",
+    "nativeNames": [
+      "اليمن"
+    ]
+  },
+  {
+    "countryCode": "YT",
+    "languageCodes": [
+      "fr"
+    ],
+    "phonePrefix": 262,
+    "englishName": "Mayotte",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "ZA",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 27,
+    "englishName": "South Africa",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "ZM",
+    "languageCodes": [
+      "en"
+    ],
+    "phonePrefix": 260,
+    "englishName": "Zambia",
+    "nativeNames": []
+  },
+  {
+    "countryCode": "ZW",
+    "languageCodes": [
+      "sn",
+      "en",
+      "nd"
+    ],
+    "phonePrefix": 263,
+    "englishName": "Zimbabwe",
+    "nativeNames": []
+  }
+]

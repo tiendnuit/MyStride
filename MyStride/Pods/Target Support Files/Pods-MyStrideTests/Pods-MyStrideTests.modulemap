@@ -1,0 +1,6 @@
+framework module Pods_MyStrideTests {
+  umbrella header "Pods-MyStrideTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

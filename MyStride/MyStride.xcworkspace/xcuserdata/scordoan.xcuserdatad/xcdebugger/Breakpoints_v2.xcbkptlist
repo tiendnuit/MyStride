@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyStride/Core/Network/APIClient.swift"
+            timestampString = "553059945.919915"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "signUp(userInfos:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyStride.APIClient.signUp(userInfos: Swift.Array&lt;__ObjC.AWSCognitoIdentityUserAttributeType&gt;) -&gt; RxSwift.Observable&lt;Any&gt;"
+                  moduleName = "MyStride"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/scordoan/Documents/SelfEducation/Swift/MyStride/MyStride/MyStride/Core/Network/APIClient.swift"
+                  timestampString = "553032118.627136"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.AnyObserver&lt;Any&gt;) -&gt; RxSwift.Disposable in MyStride.APIClient.signUp(userInfos: Swift.Array&lt;__ObjC.AWSCognitoIdentityUserAttributeType&gt;) -&gt; RxSwift.Observable&lt;Any&gt;"
+                  moduleName = "MyStride"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/scordoan/Documents/SelfEducation/Swift/MyStride/MyStride/MyStride/Core/Network/APIClient.swift"
+                  timestampString = "553032118.630571"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

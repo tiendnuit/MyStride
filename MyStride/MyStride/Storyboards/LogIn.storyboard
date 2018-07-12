@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fdU-m2-cW9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Log In-->
+        <scene sceneID="8Hm-oU-gp8">
+            <objects>
+                <tableViewController storyboardIdentifier="LoginViewController" id="XBh-hX-lr8" customClass="LoginViewController" customModule="MyStride" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fHp-TR-ywr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="pAt-AA-EBW">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="182"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="555-555-5555" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TbZ-jI-qBR" customClass="StrideTextField" customModule="MyStride" customModuleProvider="target">
+                                    <rect key="frame" x="25" y="55" width="325" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="8E0-79-ba5"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your mobile number." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGl-zK-xKO">
+                                    <rect key="frame" x="20" y="20" width="335" height="21"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                    <color key="textColor" red="0.47058823529999999" green="0.49019607840000001" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHj-on-nNQ" customClass="CircularButton" customModule="MyStride" customModuleProvider="target">
+                                    <rect key="frame" x="25" y="120" width="325" height="47"/>
+                                    <color key="backgroundColor" red="0.28235294119999998" green="0.81176470590000005" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="47" id="w7s-xB-RaF"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                    <state key="normal" title="SEND CODE"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="TbZ-jI-qBR" firstAttribute="top" secondItem="gGl-zK-xKO" secondAttribute="bottom" constant="14" id="3cJ-We-QOc"/>
+                                <constraint firstItem="gGl-zK-xKO" firstAttribute="top" secondItem="pAt-AA-EBW" secondAttribute="top" constant="20" id="8jO-80-Acj"/>
+                                <constraint firstAttribute="trailing" secondItem="TbZ-jI-qBR" secondAttribute="trailing" constant="25" id="Bhu-kv-66y"/>
+                                <constraint firstAttribute="trailing" secondItem="jHj-on-nNQ" secondAttribute="trailing" constant="25" id="Q3r-f1-uAi"/>
+                                <constraint firstItem="gGl-zK-xKO" firstAttribute="leading" secondItem="pAt-AA-EBW" secondAttribute="leading" constant="20" id="fOD-BN-Zit"/>
+                                <constraint firstItem="TbZ-jI-qBR" firstAttribute="leading" secondItem="pAt-AA-EBW" secondAttribute="leading" constant="25" id="fnH-Pz-mGc"/>
+                                <constraint firstItem="jHj-on-nNQ" firstAttribute="top" secondItem="TbZ-jI-qBR" secondAttribute="bottom" constant="20" id="hXM-bY-QcR"/>
+                                <constraint firstItem="jHj-on-nNQ" firstAttribute="leading" secondItem="pAt-AA-EBW" secondAttribute="leading" constant="25" id="m7p-NN-P9g"/>
+                                <constraint firstAttribute="trailing" secondItem="gGl-zK-xKO" secondAttribute="trailing" constant="20" id="qhP-Wf-fTh"/>
+                            </constraints>
+                        </view>
+                        <connections>
+                            <outlet property="dataSource" destination="XBh-hX-lr8" id="oxb-yr-LRX"/>
+                            <outlet property="delegate" destination="XBh-hX-lr8" id="1Dl-1L-AdP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Log In" id="zUJ-JX-Fuj"/>
+                    <connections>
+                        <outlet property="phoneTextField" destination="TbZ-jI-qBR" id="SJL-UM-690"/>
+                        <outlet property="sendCodeButton" destination="jHj-on-nNQ" id="slH-6d-yE9"/>
+                        <segue destination="92d-8M-89o" kind="show" identifier="ToConfirm" id="nP9-2Q-ftK"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Af-ET-RR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="548" y="168"/>
+        </scene>
+        <!--ConfirmationViewController-->
+        <scene sceneID="Y7B-vu-B1o">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" referencedIdentifier="ConfirmationViewController" id="92d-8M-89o" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Pj-qQ-lrl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1269" y="112"/>
+        </scene>
+        <!--Base Navigation Controller-->
+        <scene sceneID="fUe-pE-3IE">
+            <objects>
+                <navigationController id="fdU-m2-cW9" customClass="BaseNavigationController" customModule="MyStride" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xyi-cS-Kng">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XBh-hX-lr8" kind="relationship" relationship="rootViewController" id="vnS-1p-Azc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zB5-6J-e7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217" y="168"/>
+        </scene>
+    </scenes>
+</document>
