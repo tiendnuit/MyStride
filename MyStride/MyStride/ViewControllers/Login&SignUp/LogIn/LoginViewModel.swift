@@ -22,6 +22,7 @@ final class LoginViewModel: ViewModelType {
         //SendCode trigger -> check validate and register user
         let sendCodeTrigger = input.sendCodeTrigger
             .withLatestFrom(input.phoneNumber)
+            .map { "+\(Country.current.phonePrefix)\($0)" }
             .flatMap { (phone) in
                 return self.checkValidate(phone)
                     .trackError(errorPhoneTracker)
@@ -53,38 +54,6 @@ final class LoginViewModel: ViewModelType {
             }
             return Disposables.create()
         })
-    }
-    
-    func signUp(_ firstName: String, _ lastName: String, _ phoneNumber: String) -> Observable<(Any)> {
-        var userInfos = [AWSCognitoIdentityUserAttributeType]()
-        
-        let givenName = AWSCognitoIdentityUserAttributeType()!
-        givenName.name = "given_name"
-        givenName.value = firstName
-        userInfos.append(givenName)
-        
-        let familyName = AWSCognitoIdentityUserAttributeType()!
-        familyName.name = "family_name"
-        familyName.value = lastName
-        userInfos.append(familyName)
-        
-        let locale = AWSCognitoIdentityUserAttributeType()!
-        locale.name = "locale"
-        locale.value = Locale.current.currencySymbol ?? "US"
-        userInfos.append(locale)
-        
-        
-        let userDefaults = UserDefaults.standard
-        var country = Country.default
-        if let countryCode = userDefaults.string(forKey: AppDefined.UserDefault.LastSelectedCountryCode), let index = DataManager.shared.countries.index(where: {$0.countryCode == countryCode}) {
-            country = DataManager.shared.countries[index]
-        }
-        let phone = AWSCognitoIdentityUserAttributeType()
-        phone?.name = "phone_number"
-        phone?.value = "+\(country.phonePrefix)\(phoneNumber)"
-        userInfos.append(phone!)
-        
-        return APIClient.shared.signUp(userInfos: userInfos)
     }
 }
 

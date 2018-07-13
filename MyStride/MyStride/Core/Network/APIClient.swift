@@ -141,13 +141,13 @@ class APIClient {
     func requestSMSCode(phone: String) -> Observable<Any> {
         self.clearUser()
         let authParams = [
-            "USERNAME": phone
+            "USERNAME": phone,
+            "CHALLENGE_NAME": "SMS_MFA"
         ]
         let req = AWSCognitoIdentityProviderInitiateAuthRequest()!
         req.authFlow = .customAuth
         req.clientId = AppDefined.Amazon.ClientID
         req.authParameters = authParams
-
         
         return Observable.create({ (observer) -> Disposable in
             AWSCognitoIdentityProvider.default().initiateAuth(req).continueWith { (task) -> AnyObject? in
@@ -157,6 +157,9 @@ class APIClient {
                     return nil
                 }
                 self.currentSession = task.result?.session
+                if let username = task.result?.challengeParameters?["USERNAME"] {
+                    self.username = username
+                }
                 observer.onNext(task.result as Any)
                 observer.onCompleted()
                 return nil
