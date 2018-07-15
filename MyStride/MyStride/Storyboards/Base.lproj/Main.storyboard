@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="miz-gV-uSa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="miz-gV-uSa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <!--Navigation Controller-->
         <scene sceneID="wXA-sH-35S">
             <objects>
-                <navigationController id="miz-gV-uSa" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginContainerNav" id="miz-gV-uSa" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="02P-Lf-cId">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -35,14 +35,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mockup" translatesAutoresizingMaskIntoConstraints="NO" id="H8a-hZ-7fa">
-                                <rect key="frame" x="67" y="130" width="242" height="281"/>
+                                <rect key="frame" x="66.5" y="130" width="242" height="281"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="242" id="6zB-0e-NPg"/>
                                     <constraint firstAttribute="height" constant="281" id="m2P-nS-3Zw"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qez-Qs-nv4" customClass="CircularButton" customModule="MyStride" customModuleProvider="target">
-                                <rect key="frame" x="76" y="517" width="224" height="45"/>
+                                <rect key="frame" x="75.5" y="517" width="224" height="45"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="224" id="0cb-5p-jep"/>
@@ -70,21 +70,21 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-rounded" translatesAutoresizingMaskIntoConstraints="NO" id="1NG-EG-v4e">
-                                <rect key="frame" x="87" y="106" width="34" height="34"/>
+                                <rect key="frame" x="86.5" y="106" width="34" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="hOe-ps-WlI"/>
                                     <constraint firstAttribute="width" constant="34" id="p6V-Rm-RCG"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-white-horse-shoe" translatesAutoresizingMaskIntoConstraints="NO" id="hdK-qf-ZM6">
-                                <rect key="frame" x="92" y="111" width="24" height="24"/>
+                                <rect key="frame" x="91.5" y="111" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="24" id="6xZ-Ka-Spo"/>
                                     <constraint firstAttribute="height" constant="24" id="Shu-0C-vbZ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6N-v5-p3l">
-                                <rect key="frame" x="126" y="83.5" width="124" height="31.5"/>
+                                <rect key="frame" x="125.5" y="83.5" width="124" height="31.5"/>
                                 <string key="text">Molly Volkland 
 21 Rides this month</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -92,7 +92,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhF-9z-1sk" customClass="CircularButton" customModule="MyStride" customModuleProvider="target">
-                                <rect key="frame" x="75" y="576" width="224" height="45"/>
+                                <rect key="frame" x="75.5" y="576" width="224" height="45"/>
                                 <color key="backgroundColor" red="0.28235294119999998" green="0.81176470590000005" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="224" id="QUj-hc-30D"/>
@@ -109,7 +109,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="4Sx-JB-MqQ" kind="show" id="0vG-WE-1jM"/>
+                                    <segue destination="4Sx-JB-MqQ" kind="show" identifier="ToLogin" id="0vG-WE-1jM"/>
                                 </connections>
                             </button>
                         </subviews>

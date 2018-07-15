@@ -36,6 +36,11 @@ class HandleViewController: UITableViewController {
             guard self.nameTextField.inputStatus != .error else { return }
             self.nameTextField.inputStatus = (value?.isEmpty == false) ? .valid : .none
         }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
+        
+        //Continue button
+        self.continueButton.rx.tap.subscribe(onNext: { [weak self] _ in
+            self?.view.endEditing(true)
+        }).disposed(by: disposeBag)
     }
     
     private func bindViewModel() {
@@ -45,13 +50,21 @@ class HandleViewController: UITableViewController {
         
         let output = viewModel.transform(input: input)
         output.canContinue.drive(continueButton.rx.isEnabled).disposed(by: disposeBag)
-        output.continueTrigger.drive(onNext: { [weak self] () in
-            self?.showAlert(title: "Go", msg: nil)
+        output.continueTrigger.drive(onNext: { () in
+                AppDelegate.shared.showHomePage()
             
             }, onCompleted: nil, onDisposed: nil)
             .disposed(by: disposeBag)
 
-        
+        output.handleAvailable.drive(onNext: { [weak self] (available) in
+            guard let `self` = self else { return }
+            if !available {
+                self.nameTextField.inputStatus = .error
+                self.showToast(message: "The Handle \(self.nameTextField.text!) is not available!")
+            }
+            
+            }, onCompleted: nil, onDisposed: nil)
+            .disposed(by: disposeBag)
         
         //Validate error
         output.invalidName.drive(onNext: { (error) in

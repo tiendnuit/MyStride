@@ -20,22 +20,35 @@ final class HandleViewModel: ViewModelType {
         
         let canContinue = input.name.map{!$0.isEmpty}
         
-        let continueTrigger = input.continueTrigger
+        
+        let handleAvailable = input.continueTrigger
             .withLatestFrom(input.name)
             .flatMap { (phone) in
                 return self.checkValidate(phone)
                     .trackError(errorNameTracker)
                     .asDriverOnErrorJustComplete()
             }
-            .flatMap { (name) -> SharedSequence<DriverSharingStrategy, Void> in
-                return APIClient.shared.lambda(name)
+            .flatMap { (name) -> SharedSequence<DriverSharingStrategy, Bool> in
+                return APIClient.shared.checkHandleAvailable(name)
+                    .trackActivity(activityIndicator)
+                    .trackError(errorTracker)
+                    .asDriverOnErrorJustComplete()
+                    //.mapToVoid()
+            }
+        
+        let continueTrigger = handleAvailable.filter {$0 == true}
+            .withLatestFrom(input.name)
+            .flatMapLatest { (name) -> SharedSequence<DriverSharingStrategy, Void> in
+                return APIClient.shared.saveHandle(name)
                     .trackActivity(activityIndicator)
                     .trackError(errorTracker)
                     .asDriverOnErrorJustComplete()
                     .mapToVoid()
-        }
+            }
+
         
         return Output(continueTrigger: continueTrigger,
+                      handleAvailable: handleAvailable,
                       canContinue: canContinue,
                       invalidName:errorNameTracker.asDriver(),
                       error: errorTracker.asDriver(),
@@ -64,6 +77,7 @@ extension HandleViewModel {
     
     struct Output {
         let continueTrigger: Driver<Void>
+        let handleAvailable: Driver<Bool>
         let canContinue: Driver<Bool>
         let invalidName: Driver<Error>
         let error: Driver<Error>

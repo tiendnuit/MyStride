@@ -32,12 +32,16 @@ final class ConfirmationViewModel: ViewModelType {
                     .trackError(errorCodeTracker)
                     .asDriverOnErrorJustComplete()
             }
-            .flatMap { (code) -> SharedSequence<DriverSharingStrategy, Void> in
+            .flatMap { (code) in
                 return (self.fromSignUp ? APIClient.shared.confirmSignUp(code: code) : APIClient.shared.authWithSMSCode(code))
                     .trackActivity(activityIndicator)
                     .trackError(errorTracker)
                     .asDriverOnErrorJustComplete()
-                    .mapToVoid()
+            }.flatMapLatest { (_) -> SharedSequence<DriverSharingStrategy, Bool> in
+                return (self.fromSignUp ? Observable.just(true) : APIClient.shared.userOnboardStatus())
+                    .trackActivity(activityIndicator)
+                    //.trackError(errorTracker)
+                    .asDriverOnErrorJustComplete()
             }
         
         //Resend event
@@ -50,10 +54,20 @@ final class ConfirmationViewModel: ViewModelType {
                     .mapToVoid()
             }
         
+//        //Onboarding checking
+//        let onboardingStatus = input.checkOnboardingStatus
+//            .flatMap { (needCheck) -> SharedSequence<DriverSharingStrategy, Bool> in
+//                return (needCheck ? APIClient.shared.checkHandleAvailable("ScorDDDDOAAAAN") : Observable.just(true))
+//                    .trackActivity(activityIndicator)
+//                    .trackError(errorTracker)
+//                    .asDriverOnErrorJustComplete()
+//        }
+        
         return Output(continueTrigger: continueTrigger,
                       resendCodeTrigger: resendTrigger,
                       canContinue: canContinue,
                       invalidCode:errorCodeTracker.asDriver(),
+                      //onboardingStatus: onboardingStatus,
                       error: errorTracker.asDriver(),
                       loading: activityIndicator.asDriver())
     }
@@ -70,6 +84,7 @@ final class ConfirmationViewModel: ViewModelType {
             return Disposables.create()
         })
     }
+
     
     func signUp(_ firstName: String, _ lastName: String, _ phoneNumber: String) -> Observable<(Any)> {
         var userInfos = [AWSCognitoIdentityUserAttributeType]()
@@ -109,10 +124,11 @@ extension ConfirmationViewModel {
         let continueTrigger: Driver<Void>
         let resendCodeTrigger: Driver<Void>
         let code: Driver<String>
+        //let checkOnboardingStatus: Driver<Bool>
     }
     
     struct Output {
-        let continueTrigger: Driver<Void>
+        let continueTrigger: Driver<Bool>
         let resendCodeTrigger: Driver<Void>
         let canContinue: Driver<Bool>
         let invalidCode: Driver<Error>

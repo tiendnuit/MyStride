@@ -44,8 +44,17 @@ class ConfirmationViewController: UIViewController {
         }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
         
         //Buttons
+        //Continue button
+        self.continueButton.rx.tap.subscribe(onNext: { [weak self] _ in
+            self?.view.endEditing(true)
+        }).disposed(by: disposeBag)
+        
+        //ReSend code button
         reSendButton.layer.borderColor = UIColor.StrideGreen.cgColor
         reSendButton.layer.borderWidth = 2.5
+        self.reSendButton.rx.tap.subscribe(onNext: { [weak self] _ in
+            self?.view.endEditing(true)
+        }).disposed(by: disposeBag)
     }
     
     private func bindViewModel() {
@@ -56,10 +65,10 @@ class ConfirmationViewController: UIViewController {
         
         let output = viewModel.transform(input: input)
         output.canContinue.drive(continueButton.rx.isEnabled).disposed(by: disposeBag)
-        output.continueTrigger.drive(onNext: { [weak self] () in
-            if self?.isSignUp == true {
-                self?.finishSignUp()
-            } else {
+        output.continueTrigger.drive(onNext: { [weak self] (status) in
+            if status == true {
+                self?.finishComfirmed()
+            } else { ///-> go to handle
                 self?.goOnboarding()
             }
             
@@ -71,8 +80,7 @@ class ConfirmationViewController: UIViewController {
             self?.showAlert(title: "Code resent successful!", msg: nil)
             }, onCompleted: nil, onDisposed: nil)
             .disposed(by: disposeBag)
-        
-        
+
         //Validate error
         output.invalidCode.drive(onNext: { (error) in
             self.codeTextField.inputStatus = .error
@@ -93,21 +101,35 @@ class ConfirmationViewController: UIViewController {
             .disposed(by: disposeBag)
     }
     
-    func finishSignUp() {
+    func finishComfirmed() {
+        if isSignUp {
+            showSignUpAlert()
+        } else {
+            goHomePage()
+        }
+    }
+
+    
+    func showSignUpAlert() {
         let alert = UIAlertController(title: "Good news!", message: "You already have a mystride account. \nWould you like to login?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "No thanks", style: .cancel, handler: { _ in
             self.dismiss(animated: true, completion: nil)
         }))
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { _ in
-            self.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: false, completion: {
+                AppDelegate.shared.showLogin()
+            })
         }))
         
         self.present(alert, animated: true, completion: nil)
     }
     
     func goOnboarding() {
-        //self.showAlert(title: "goOnboarding", msg: nil)
         self.performSegue(withIdentifier: R.segue.confirmationViewController.toHandle, sender: nil)
+    }
+    
+    func goHomePage() {
+        AppDelegate.shared.showHomePage()
     }
     
     override func didReceiveMemoryWarning() {

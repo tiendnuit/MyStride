@@ -10,14 +10,21 @@ import UIKit
 import SVProgressHUD
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, NavigatorHandler {
+
+    public class var shared: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Loading setting
         SVProgressHUD.setDefaultMaskType(.clear)
+        
         //Get Country data
         DataManager.shared.loadCountriesData()
         
@@ -51,7 +58,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
+//MARK: - Public functions
+extension AppDelegate {
+    func showLoginContainer() {
+        self.showLoginContainer(withWindow: self.window)
+    }
+    
+    func showHomePage() {
+        self.showHomePage(withWindow: self.window)
+    }
+    
+    func showLogin() {
+        self.showLogin(withWindow: self.window)
+    }
+}

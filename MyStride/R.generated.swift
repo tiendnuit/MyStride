@@ -399,14 +399,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.segue` struct is generated, and contains static references to 3 view controllers.
+  /// This `R.segue` struct is generated, and contains static references to 4 view controllers.
   struct segue {
-    /// This struct is generated for `ConfirmationViewController`, and contains static references to 2 segues.
+    /// This struct is generated for `ConfirmationViewController`, and contains static references to 1 segues.
     struct confirmationViewController {
       /// Segue identifier `ToHandle`.
       static let toHandle: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, ConfirmationViewController, HandleViewController> = Rswift.StoryboardSegueIdentifier(identifier: "ToHandle")
-      /// Segue identifier `ToLogin`.
-      static let toLogin: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, ConfirmationViewController, BaseNavigationController> = Rswift.StoryboardSegueIdentifier(identifier: "ToLogin")
       
       /// Optionally returns a typed version of segue `ToHandle`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
@@ -415,11 +413,19 @@ struct R: Rswift.Validatable {
         return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.confirmationViewController.toHandle, segue: segue)
       }
       
+      fileprivate init() {}
+    }
+    
+    /// This struct is generated for `LoginContainerViewController`, and contains static references to 1 segues.
+    struct loginContainerViewController {
+      /// Segue identifier `ToLogin`.
+      static let toLogin: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, LoginContainerViewController, BaseNavigationController> = Rswift.StoryboardSegueIdentifier(identifier: "ToLogin")
+      
       /// Optionally returns a typed version of segue `ToLogin`.
       /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
       /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
-      static func toLogin(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, ConfirmationViewController, BaseNavigationController>? {
-        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.confirmationViewController.toLogin, segue: segue)
+      static func toLogin(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, LoginContainerViewController, BaseNavigationController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.loginContainerViewController.toLogin, segue: segue)
       }
       
       fileprivate init() {}
@@ -458,22 +464,49 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 5 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 11 storyboards.
   struct storyboard {
+    /// Storyboard `Activity`.
+    static let activity = _R.storyboard.activity()
+    /// Storyboard `AddNew`.
+    static let addNew = _R.storyboard.addNew()
     /// Storyboard `Handle`.
     static let handle = _R.storyboard.handle()
+    /// Storyboard `HomePage`.
+    static let homePage = _R.storyboard.homePage()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `LogIn`.
     static let logIn = _R.storyboard.logIn()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
+    /// Storyboard `Profile`.
+    static let profile = _R.storyboard.profile()
     /// Storyboard `SignUp`.
     static let signUp = _R.storyboard.signUp()
+    /// Storyboard `Stable`.
+    static let stable = _R.storyboard.stable()
+    /// Storyboard `TackStore`.
+    static let tackStore = _R.storyboard.tackStore()
+    
+    /// `UIStoryboard(name: "Activity", bundle: ...)`
+    static func activity(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.activity)
+    }
+    
+    /// `UIStoryboard(name: "AddNew", bundle: ...)`
+    static func addNew(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.addNew)
+    }
     
     /// `UIStoryboard(name: "Handle", bundle: ...)`
     static func handle(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.handle)
+    }
+    
+    /// `UIStoryboard(name: "HomePage", bundle: ...)`
+    static func homePage(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.homePage)
     }
     
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
@@ -491,9 +524,24 @@ struct R: Rswift.Validatable {
       return UIKit.UIStoryboard(resource: R.storyboard.main)
     }
     
+    /// `UIStoryboard(name: "Profile", bundle: ...)`
+    static func profile(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.profile)
+    }
+    
     /// `UIStoryboard(name: "SignUp", bundle: ...)`
     static func signUp(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.signUp)
+    }
+    
+    /// `UIStoryboard(name: "Stable", bundle: ...)`
+    static func stable(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.stable)
+    }
+    
+    /// `UIStoryboard(name: "TackStore", bundle: ...)`
+    static func tackStore(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.tackStore)
     }
     
     fileprivate init() {}
@@ -530,9 +578,28 @@ struct _R: Rswift.Validatable {
     static func validate() throws {
       try launchScreen.validate()
       try main.validate()
-      try logIn.validate()
       try signUp.validate()
+      try logIn.validate()
+      try homePage.validate()
       try handle.validate()
+    }
+    
+    struct activity: Rswift.StoryboardResourceWithInitialControllerType {
+      typealias InitialController = BaseNavigationController
+      
+      let bundle = R.hostingBundle
+      let name = "Activity"
+      
+      fileprivate init() {}
+    }
+    
+    struct addNew: Rswift.StoryboardResourceWithInitialControllerType {
+      typealias InitialController = BaseNavigationController
+      
+      let bundle = R.hostingBundle
+      let name = "AddNew"
+      
+      fileprivate init() {}
     }
     
     struct handle: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
@@ -548,6 +615,24 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if _R.storyboard.handle().handleViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'handleViewController' could not be loaded from storyboard 'Handle' as 'HandleViewController'.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct homePage: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = TabBarViewController
+      
+      let bundle = R.hostingBundle
+      let name = "HomePage"
+      let tabBarViewController = StoryboardViewControllerResource<TabBarViewController>(identifier: "TabBarViewController")
+      
+      func tabBarViewController(_: Void = ()) -> TabBarViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: tabBarViewController)
+      }
+      
+      static func validate() throws {
+        if _R.storyboard.homePage().tabBarViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'tabBarViewController' could not be loaded from storyboard 'HomePage' as 'TabBarViewController'.") }
       }
       
       fileprivate init() {}
@@ -588,14 +673,29 @@ struct _R: Rswift.Validatable {
       typealias InitialController = UIKit.UINavigationController
       
       let bundle = R.hostingBundle
+      let loginContainerNav = StoryboardViewControllerResource<UIKit.UINavigationController>(identifier: "LoginContainerNav")
       let name = "Main"
+      
+      func loginContainerNav(_: Void = ()) -> UIKit.UINavigationController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: loginContainerNav)
+      }
       
       static func validate() throws {
         if UIKit.UIImage(named: "icon-white-horse-shoe") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'icon-white-horse-shoe' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "bg-rounded") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'bg-rounded' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "mockup") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'mockup' is used in storyboard 'Main', but couldn't be loaded.") }
         if UIKit.UIImage(named: "avatar-mockup") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'avatar-mockup' is used in storyboard 'Main', but couldn't be loaded.") }
+        if _R.storyboard.main().loginContainerNav() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'loginContainerNav' could not be loaded from storyboard 'Main' as 'UIKit.UINavigationController'.") }
       }
+      
+      fileprivate init() {}
+    }
+    
+    struct profile: Rswift.StoryboardResourceWithInitialControllerType {
+      typealias InitialController = BaseNavigationController
+      
+      let bundle = R.hostingBundle
+      let name = "Profile"
       
       fileprivate init() {}
     }
@@ -620,6 +720,24 @@ struct _R: Rswift.Validatable {
         if _R.storyboard.signUp().baseNavigationController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'baseNavigationController' could not be loaded from storyboard 'SignUp' as 'BaseNavigationController'.") }
         if _R.storyboard.signUp().confirmationViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'confirmationViewController' could not be loaded from storyboard 'SignUp' as 'ConfirmationViewController'.") }
       }
+      
+      fileprivate init() {}
+    }
+    
+    struct stable: Rswift.StoryboardResourceWithInitialControllerType {
+      typealias InitialController = BaseNavigationController
+      
+      let bundle = R.hostingBundle
+      let name = "Stable"
+      
+      fileprivate init() {}
+    }
+    
+    struct tackStore: Rswift.StoryboardResourceWithInitialControllerType {
+      typealias InitialController = BaseNavigationController
+      
+      let bundle = R.hostingBundle
+      let name = "TackStore"
       
       fileprivate init() {}
     }

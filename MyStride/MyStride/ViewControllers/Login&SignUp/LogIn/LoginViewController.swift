@@ -64,6 +64,11 @@ class LoginViewController: UITableViewController {
         }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
 
         updatePhoneTextField()
+        
+        //Send code button
+        self.sendCodeButton.rx.tap.subscribe(onNext: { [weak self] _ in
+            self?.view.endEditing(true)
+        }).disposed(by: disposeBag)
     }
     
     private func updatePhoneTextField() {

@@ -25,5 +25,9 @@ class LoginContainerViewController: UIViewController {
         
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
+    
+    func goToLogin() {
+        self.performSegue(withIdentifier: R.segue.loginContainerViewController.toLogin, sender: nil)
+    }
 }
 

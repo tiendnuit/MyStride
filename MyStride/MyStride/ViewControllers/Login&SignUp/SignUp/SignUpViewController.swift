@@ -41,14 +41,24 @@ class SignUpViewController: UITableViewController {
     private func setupComponents() {
         
         //Name
+        self.firstNameTextField.returnKeyType = .next
         self.firstNameTextField.rx.text.asObservable().subscribe(onNext: { (value) in
             self.firstNameTextField.inputStatus = (value?.isEmpty == false) ? .valid : .none
         }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
         
+        self.firstNameTextField.rx.controlEvent([.editingDidEndOnExit])
+            .subscribe { text in
+                self.lastnameTextField.becomeFirstResponder()
+            }
+            .disposed(by: disposeBag)
+        
+        
+        //self.lastnameTextField
+        self.lastnameTextField.returnKeyType = .done
         self.lastnameTextField.rx.text.asObservable().subscribe(onNext: { (value) in
             self.lastnameTextField.inputStatus = (value?.isEmpty == false) ? .valid : .none
         }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
-
+        
         //Phone
         let userDefaults = UserDefaults.standard
         if let countryCode = userDefaults.string(forKey: AppDefined.UserDefault.LastSelectedCountryCode), let index = DataManager.shared.countries.index(where: {$0.countryCode == countryCode}) {
@@ -61,6 +71,16 @@ class SignUpViewController: UITableViewController {
             self.phoneTextField.inputStatus = (value?.isEmpty == false) ? .valid : .none
         }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
         updatePhoneTextField()
+        
+        //Continue button
+        self.continueButton.rx.tap.subscribe(onNext: { [weak self] _ in
+            self?.view.endEditing(true)
+        }).disposed(by: disposeBag)
+        
+        //Send code button
+        self.sendCodeButton.rx.tap.subscribe(onNext: { [weak self] _ in
+            self?.view.endEditing(true)
+        }).disposed(by: disposeBag)
     }
     
     private func updatePhoneTextField() {

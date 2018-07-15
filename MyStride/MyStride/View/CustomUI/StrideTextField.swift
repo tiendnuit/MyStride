@@ -54,6 +54,8 @@ class StrideTextField: UITextField {
     }
     
     func prepareStaticUI() {
+        //set default font
+        self.font = R.font.montserratRegular(size: 16)
         
         self.layer.cornerRadius = self.frame.size.height/2
         self.layer.borderWidth = 2.5

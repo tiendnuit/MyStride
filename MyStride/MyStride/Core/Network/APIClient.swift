@@ -30,7 +30,7 @@ class APIClient {
     static let shared = APIClient()
     
     var pool: AWSCognitoIdentityUserPool!
-    var username = "user_id-" + UUID().uuidString//UIDevice.current.identifierForVendor!.uuidString
+    var username = "user_id-" + UUID().uuidString
     var currentUser:AWSCognitoIdentityUser? {
         get {
             return self.pool.getUser(username)
@@ -53,7 +53,7 @@ class APIClient {
         AWSServiceManager.default().defaultServiceConfiguration = serviceConfiguration
         AWSCognitoIdentityProvider.register(with: serviceConfiguration!, forKey: AppDefined.Amazon.UserPoolsSignInProviderKey)
         
-        
+        AWSLambdaInvoker.register(with: serviceConfiguration!, forKey: AppDefined.Amazon.AuthenticatedLambdaKey)
         
     }
     
@@ -76,6 +76,17 @@ class APIClient {
         AWSLambdaInvoker.register(with: serviceConfiguration!, forKey: AppDefined.Amazon.AuthenticatedLambdaKey)
     }
     
+    private func getError(_ error: Error?) -> StrideError? {
+        if let error = error as NSError? {
+            if let message = (error.userInfo["message"] as? String) {
+                return StrideError(code: error.code, message: message)
+            }
+            return StrideError.UnknownError
+        }
+        
+        return nil
+    }
+
     func clearUser() {
         self.token = nil
         self.currentSession = nil
@@ -88,11 +99,11 @@ class APIClient {
         username = "user_id-" + UUID().uuidString
         return Observable.create({ [unowned self] (observer) -> Disposable in
             self.pool.signUp(self.username, password: "Stride@1234", userAttributes: userInfos, validationData: nil).continueWith { (task) -> Any? in
-                if let error = task.error as NSError? {
-                    let message = (error.userInfo["message"] as? String) ?? "Unknow"
-                    observer.onError(StrideError(code: error.code, message: message))
+                if let error = self.getError(task.error) {
+                    observer.onError(error)
                     return nil
                 }
+                
                 observer.onNext(task.result as Any)
                 observer.onCompleted()
                 return nil
@@ -105,11 +116,11 @@ class APIClient {
     func confirmSignUp(code: String) -> Observable<Any> {
         return Observable.create({ [unowned self] (observer) -> Disposable in
             self.currentUser?.confirmSignUp(code, forceAliasCreation: true).continueWith { (task) -> AnyObject? in
-                if let error = task.error as NSError? {
-                    let message = (error.userInfo["message"] as? String) ?? "Unknow"
-                    observer.onError(StrideError(code: error.code, message: message))
+                if let error = self.getError(task.error) {
+                    observer.onError(error)
                     return nil
                 }
+               
                 observer.onNext(task.result as Any)
                 observer.onCompleted()
                 return nil
@@ -123,9 +134,8 @@ class APIClient {
     func resendConfirmationCode() -> Observable<Any> {
         return Observable.create({ [unowned self] (observer) -> Disposable in
             self.currentUser?.resendConfirmationCode().continueWith { (task) -> AnyObject? in
-                if let error = task.error as NSError? {
-                    let message = (error.userInfo["message"] as? String) ?? "Unknow"
-                    observer.onError(StrideError(code: error.code, message: message))
+                if let error = self.getError(task.error) {
+                    observer.onError(error)
                     return nil
                 }
                 observer.onNext(task.result as Any)
@@ -151,9 +161,8 @@ class APIClient {
         
         return Observable.create({ (observer) -> Disposable in
             AWSCognitoIdentityProvider.default().initiateAuth(req).continueWith { (task) -> AnyObject? in
-                if let error = task.error as NSError? {
-                    let message = (error.userInfo["message"] as? String) ?? "Unknow"
-                    observer.onError(StrideError(code: error.code, message: message))
+                if let error = self.getError(task.error) {
+                    observer.onError(error)
                     return nil
                 }
                 self.currentSession = task.result?.session
@@ -182,9 +191,8 @@ class APIClient {
         response.session = self.currentSession
         return Observable.create({ (observer) -> Disposable in
             AWSCognitoIdentityProvider.default().respond(toAuthChallenge: response).continueWith { (task) -> AnyObject? in
-                if let error = task.error as NSError? {
-                    let message = (error.userInfo["message"] as? String) ?? "Unknow"
-                    observer.onError(StrideError(code: error.code, message: message))
+                if let error = self.getError(task.error) {
+                    observer.onError(error)
                     return nil
                 }
                 self.token = task.result!.authenticationResult!.idToken
@@ -199,25 +207,88 @@ class APIClient {
     }
     
     //
-    func lambda(_ name: String) -> Observable<Any> {
+    func lambda(_ functionName: String, params: [String: Any], completed:@escaping (Any?, StrideError?)->Void) {
         //Lambda
         let lambdaInvoker = AWSLambdaInvoker.init(forKey: AppDefined.Amazon.AuthenticatedLambdaKey)
-        let jsonObject = [String: Any]()
-
-        return Observable.create({ (observer) -> Disposable in
-            lambdaInvoker.invokeFunction(name, jsonObject: jsonObject)
-                .continueWith { (task) -> AnyObject? in
-                if let error = task.error as NSError? {
-                    let message = (error.userInfo["message"] as? String) ?? "Unknow"
-                    observer.onError(StrideError(code: error.code, message: message))
+        
+        lambdaInvoker.invokeFunction(functionName, jsonObject: params)
+            .continueWith { (task) -> AnyObject? in
+                if let error = self.getError(task.error) {
+                    completed(nil, error)
                     return nil
                 }
-                //self.token = task.result
-                observer.onNext(task.result as Any)
-                observer.onCompleted()
+                completed(task.result, nil)
                 return nil
-            }
+        }
+    }
+    
+    // IsHandleAvailable
+    func checkHandleAvailable(_ handle: String) -> Observable<Bool> {
+        return Observable.create({ (observer) -> Disposable in
+            let lambdaInvoker = AWSLambdaInvoker.init(forKey: AppDefined.Amazon.AuthenticatedLambdaKey)
             
+            lambdaInvoker.invokeFunction(AppDefined.Amazon.LambdaFunction.IsHandleAvailable, jsonObject: ["handle":handle])
+                .continueWith { (task) -> AnyObject? in
+                    if let error = self.getError(task.error) {
+                        observer.onError(error)
+                        return nil
+                    }
+                    if let result = task.result as? [String: Any], let status = result["result"] as? Bool {
+                        observer.onNext(status)
+                    } else {
+                        observer.onNext(false)
+                    }
+                    
+                    observer.onCompleted()
+                    return nil
+            }
+            return NopDisposable.instance
+        })
+    }
+    
+    // IsHandleAvailable
+    func userOnboardStatus() -> Observable<Bool> {
+
+        return Observable.create({ (observer) -> Disposable in
+            let lambdaInvoker = AWSLambdaInvoker.init(forKey: AppDefined.Amazon.AuthenticatedLambdaKey)
+            
+            lambdaInvoker.invokeFunction(AppDefined.Amazon.LambdaFunction.GetUserOnboardStatus, jsonObject:["user_id":self.username])
+                .continueWith { (task) -> AnyObject? in
+                    //incase error with get status of UserOnboardStatus, we will continue go to the homepage and will check the UserOnboardStatus in the next login
+                    if let _ = self.getError(task.error) {
+                        //observer.onError(error)
+                        observer.onNext(false)
+                        observer.onCompleted()
+                        return nil
+                    }
+                    if let result = task.result as? [String: Any], let status = result["onboard"] as? Bool {
+                        observer.onNext(status)
+                    } else {
+                        observer.onNext(false)
+                    }
+
+                    observer.onCompleted()
+                    return nil
+            }
+            return NopDisposable.instance
+        })
+    }
+    
+    // Save Handle
+    func saveHandle(_ handle: String) -> Observable<Any> {
+        return Observable.create({ (observer) -> Disposable in
+            //Lambda
+            let lambdaInvoker = AWSLambdaInvoker.init(forKey: AppDefined.Amazon.AuthenticatedLambdaKey)
+            lambdaInvoker.invokeFunction(AppDefined.Amazon.LambdaFunction.SaveHandle, jsonObject: ["handle":handle, "id_token":self.token!])
+                .continueWith { (task) -> AnyObject? in
+                    if let error = self.getError(task.error) {
+                        observer.onError(error)
+                        return nil
+                    }
+                    observer.onNext(task.result as Any)
+                    observer.onCompleted()
+                    return nil
+            }
             return NopDisposable.instance
         })
     }

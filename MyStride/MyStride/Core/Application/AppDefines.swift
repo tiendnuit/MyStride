@@ -36,6 +36,12 @@ struct AppDefined {
         static var UserPoolsSignInProviderKey = "UserPool"
         static var TokenKey = "cognito-idp.us-east-1.amazonaws.com/us-east-1_YA7NmvRlY"
         static var AuthenticatedLambdaKey = "AuthenticatedLambdaKey"
+        
+        struct LambdaFunction {
+            static var IsHandleAvailable = "isHandleAvailable"
+            static var GetUserOnboardStatus = "getUserOnboardStatus"
+            static var SaveHandle = "saveHandle"
+        }
     }
 
     struct UserDefault {

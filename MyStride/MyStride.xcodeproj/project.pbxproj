@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		14B07F1955ACD151DB5D7FC6 /* Pods_MyStrideTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5395D2353B3759B0186BF353 /* Pods_MyStrideTests.framework */; };
 		3B45F537E7B575FA6C3DCB78 /* Pods_MyStrideUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4102445DBCB9C2368E492DA5 /* Pods_MyStrideUITests.framework */; };
+		A6374B5420FBAA24000E9BDF /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6374B5320FBAA24000E9BDF /* Activity.storyboard */; };
+		A6374B5620FBABCE000E9BDF /* Stable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6374B5520FBABCE000E9BDF /* Stable.storyboard */; };
+		A6374B5820FBAC2F000E9BDF /* TackStore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6374B5720FBAC2F000E9BDF /* TackStore.storyboard */; };
+		A6374B5A20FBAC51000E9BDF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6374B5920FBAC51000E9BDF /* Profile.storyboard */; };
+		A6374B5C20FBAD44000E9BDF /* AddNew.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6374B5B20FBAD44000E9BDF /* AddNew.storyboard */; };
+		A6374B5E20FBAE00000E9BDF /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6374B5D20FBAE00000E9BDF /* TabbarViewController.swift */; };
+		A6374B6020FBB03B000E9BDF /* NavigationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6374B5F20FBB03B000E9BDF /* NavigationHandler.swift */; };
+		A6374B6320FBB354000E9BDF /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6374B6220FBB354000E9BDF /* ActivityViewController.swift */; };
 		A63A6D6B20F489C700D6AFEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A6D6A20F489C700D6AFEA /* AppDelegate.swift */; };
 		A63A6D6D20F489C700D6AFEA /* LoginContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A6D6C20F489C700D6AFEA /* LoginContainerViewController.swift */; };
 		A63A6D7020F489C700D6AFEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63A6D6E20F489C700D6AFEA /* Main.storyboard */; };
@@ -24,6 +32,7 @@
 		A63A6DB020F49DCE00D6AFEA /* StrideTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A6DAF20F49DCE00D6AFEA /* StrideTextField.swift */; };
 		A63A6DB420F4B3EB00D6AFEA /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A6DB320F4B3EB00D6AFEA /* BaseNavigationController.swift */; };
 		A63B135D20F5EB4A004943E7 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B135C20F5EB4A004943E7 /* APIClient.swift */; };
+		A63E1E5F20FA59B30071FC54 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63E1E5E20FA59B30071FC54 /* HomePage.storyboard */; };
 		A664122A20F4BE9B002CF111 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664122920F4BE9B002CF111 /* SignUpViewController.swift */; };
 		A68D991420F52D97000B055E /* Montserrat-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A68D98EF20F52D8D000B055E /* Montserrat-Italic.otf */; };
 		A68D991620F52D97000B055E /* Montserrat-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A68D98F120F52D8E000B055E /* Montserrat-BoldItalic.otf */; };
@@ -94,6 +103,14 @@
 		5395D2353B3759B0186BF353 /* Pods_MyStrideTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyStrideTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		817B85CABF640721770523B1 /* Pods-MyStrideTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStrideTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyStrideTests/Pods-MyStrideTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A23B43C40DA0F6DCAB1C2193 /* Pods-MyStride.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyStride.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyStride/Pods-MyStride.release.xcconfig"; sourceTree = "<group>"; };
+		A6374B5320FBAA24000E9BDF /* Activity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
+		A6374B5520FBABCE000E9BDF /* Stable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stable.storyboard; sourceTree = "<group>"; };
+		A6374B5720FBAC2F000E9BDF /* TackStore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TackStore.storyboard; sourceTree = "<group>"; };
+		A6374B5920FBAC51000E9BDF /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		A6374B5B20FBAD44000E9BDF /* AddNew.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNew.storyboard; sourceTree = "<group>"; };
+		A6374B5D20FBAE00000E9BDF /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		A6374B5F20FBB03B000E9BDF /* NavigationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHandler.swift; sourceTree = "<group>"; };
+		A6374B6220FBB354000E9BDF /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		A63A6D6720F489C700D6AFEA /* MyStride.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStride.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63A6D6A20F489C700D6AFEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A63A6D6C20F489C700D6AFEA /* LoginContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContainerViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +132,7 @@
 		A63A6DAF20F49DCE00D6AFEA /* StrideTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrideTextField.swift; sourceTree = "<group>"; };
 		A63A6DB320F4B3EB00D6AFEA /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		A63B135C20F5EB4A004943E7 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		A63E1E5E20FA59B30071FC54 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 		A664122920F4BE9B002CF111 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A68D98EF20F52D8D000B055E /* Montserrat-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Italic.otf"; path = "montserrat/Montserrat-Italic.otf"; sourceTree = "<group>"; };
 		A68D98F120F52D8E000B055E /* Montserrat-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-BoldItalic.otf"; path = "montserrat/Montserrat-BoldItalic.otf"; sourceTree = "<group>"; };
@@ -202,6 +220,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A6374B6120FBB337000E9BDF /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				A6374B6220FBB354000E9BDF /* ActivityViewController.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
 		A63A6D5E20F489C700D6AFEA = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +296,7 @@
 		A63A6D9A20F48BA300D6AFEA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A6374B6120FBB337000E9BDF /* Activity */,
 				A63A6DB220F4B3B600D6AFEA /* Base */,
 				A63A6DB120F4B33700D6AFEA /* Login&SignUp */,
 			);
@@ -324,6 +351,7 @@
 				A69BF36B20F4DB66003C2088 /* ViewModelType.swift */,
 				A69BF37320F4F907003C2088 /* ErrorTracker.swift */,
 				A69BF37A20F516EB003C2088 /* Utils.swift */,
+				A6374B5F20FBB03B000E9BDF /* NavigationHandler.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -352,6 +380,12 @@
 				A63A6DA520F48F1800D6AFEA /* SignUp.storyboard */,
 				A6B5A48320F65E8B00ED11FE /* LogIn.storyboard */,
 				A6B5A48E20F69E8100ED11FE /* Handle.storyboard */,
+				A63E1E5E20FA59B30071FC54 /* HomePage.storyboard */,
+				A6374B5320FBAA24000E9BDF /* Activity.storyboard */,
+				A6374B5520FBABCE000E9BDF /* Stable.storyboard */,
+				A6374B5720FBAC2F000E9BDF /* TackStore.storyboard */,
+				A6374B5920FBAC51000E9BDF /* Profile.storyboard */,
+				A6374B5B20FBAD44000E9BDF /* AddNew.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -381,6 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				A63A6DB320F4B3EB00D6AFEA /* BaseNavigationController.swift */,
+				A6374B5D20FBAE00000E9BDF /* TabbarViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -579,6 +614,8 @@
 				A68D993220F52D97000B055E /* Montserrat-ExtraBold.otf in Resources */,
 				A68D991420F52D97000B055E /* Montserrat-Italic.otf in Resources */,
 				A63A6D7520F489C900D6AFEA /* LaunchScreen.storyboard in Resources */,
+				A6374B5A20FBAC51000E9BDF /* Profile.storyboard in Resources */,
+				A6374B5820FBAC2F000E9BDF /* TackStore.storyboard in Resources */,
 				A68D992920F52D97000B055E /* Montserrat-ExtraBoldItalic.otf in Resources */,
 				A68D993820F52D97000B055E /* Montserrat-Light.otf in Resources */,
 				A63A6D7220F489C900D6AFEA /* Assets.xcassets in Resources */,
@@ -587,19 +624,23 @@
 				A68D991E20F52D97000B055E /* Montserrat-MediumItalic.otf in Resources */,
 				A6B5A48420F65E8B00ED11FE /* LogIn.storyboard in Resources */,
 				A68D991A20F52D97000B055E /* Montserrat-ThinItalic.otf in Resources */,
+				A6374B5420FBAA24000E9BDF /* Activity.storyboard in Resources */,
 				A68D993320F52D97000B055E /* Montserrat-ExtraLightItalic.otf in Resources */,
 				A68D991620F52D97000B055E /* Montserrat-BoldItalic.otf in Resources */,
 				A68D993520F52D97000B055E /* Montserrat-Black.otf in Resources */,
 				A6B5A48F20F69E8100ED11FE /* Handle.storyboard in Resources */,
 				A68D992720F52D97000B055E /* Montserrat-Regular.otf in Resources */,
 				A63A6DA620F48F1800D6AFEA /* SignUp.storyboard in Resources */,
+				A63E1E5F20FA59B30071FC54 /* HomePage.storyboard in Resources */,
 				A68D992B20F52D97000B055E /* Montserrat-LightItalic.otf in Resources */,
 				A68D992320F52D97000B055E /* Montserrat-ExtraLight.otf in Resources */,
 				A68D991D20F52D97000B055E /* Montserrat-SemiBold.otf in Resources */,
 				A69BF38120F52147003C2088 /* country-info.json in Resources */,
 				A63A6D7020F489C700D6AFEA /* Main.storyboard in Resources */,
 				A68D993120F52D97000B055E /* Montserrat-Thin.otf in Resources */,
+				A6374B5C20FBAD44000E9BDF /* AddNew.storyboard in Resources */,
 				A68D992120F52D97000B055E /* SIL Open Font License.txt in Resources */,
+				A6374B5620FBABCE000E9BDF /* Stable.storyboard in Resources */,
 				A68D992620F52D97000B055E /* Montserrat-Bold.otf in Resources */,
 				A68D992D20F52D97000B055E /* Montserrat-Medium.otf in Resources */,
 			);
@@ -735,6 +776,7 @@
 				A6B5A48920F6609B00ED11FE /* LoginViewModel.swift in Sources */,
 				A68D993C20F5465A000B055E /* ConfirmationViewController.swift in Sources */,
 				A63A6D6D20F489C700D6AFEA /* LoginContainerViewController.swift in Sources */,
+				A6374B6320FBB354000E9BDF /* ActivityViewController.swift in Sources */,
 				A63A6D6B20F489C700D6AFEA /* AppDelegate.swift in Sources */,
 				A63A6DAD20F496BC00D6AFEA /* CircularButton.swift in Sources */,
 				A63A6DB420F4B3EB00D6AFEA /* BaseNavigationController.swift in Sources */,
@@ -749,6 +791,8 @@
 				A664122A20F4BE9B002CF111 /* SignUpViewController.swift in Sources */,
 				A6B5A48720F65FDD00ED11FE /* LoginViewController.swift in Sources */,
 				A69BF37B20F516EB003C2088 /* Utils.swift in Sources */,
+				A6374B5E20FBAE00000E9BDF /* TabbarViewController.swift in Sources */,
+				A6374B6020FBB03B000E9BDF /* NavigationHandler.swift in Sources */,
 				A69BF37720F503D6003C2088 /* AppDefines.swift in Sources */,
 				A63A6DA820F4962F00D6AFEA /* Extensions.swift in Sources */,
 				A69BF36E20F4DB90003C2088 /* SignUpViewModel.swift in Sources */,
@@ -935,15 +979,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3RBQZPMDA;
 				INFOPLIST_FILE = "$(SRCROOT)/MyStride/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiendn.mystride.MyStride;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mystride-test.ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -953,15 +998,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3RBQZPMDA;
 				INFOPLIST_FILE = "$(SRCROOT)/MyStride/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiendn.mystride.MyStride;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mystride-test.ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
