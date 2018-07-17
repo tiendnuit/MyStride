@@ -4,10 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MyStride.xcscheme</key>
+		<key>MyStride.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>13</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A63A6D6620F489C700D6AFEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A63A6D7A20F489C900D6AFEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A63A6D8520F489C900D6AFEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

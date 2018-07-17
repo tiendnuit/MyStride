@@ -223,6 +223,7 @@
 		A6374B6120FBB337000E9BDF /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				A63A6DB120F4B33700D6AFEA /* Login&SignUp */,
 				A6374B6220FBB354000E9BDF /* ActivityViewController.swift */,
 			);
 			path = Activity;
@@ -298,7 +299,6 @@
 			children = (
 				A6374B6120FBB337000E9BDF /* Activity */,
 				A63A6DB220F4B3B600D6AFEA /* Base */,
-				A63A6DB120F4B33700D6AFEA /* Login&SignUp */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

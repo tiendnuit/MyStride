@@ -6,49 +6,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyStride/Core/Network/APIClient.swift"
-            timestampString = "553366228.019785"
+            timestampString = "553516447.3777159"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "signUp(userInfos:)"
+            startingLineNumber = "276"
+            endingLineNumber = "276"
+            landmarkName = "saveHandle(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyStride.APIClient.signUp(userInfos: Swift.Array&lt;__ObjC.AWSCognitoIdentityUserAttributeType&gt;) -&gt; RxSwift.Observable&lt;Any&gt;"
-                  moduleName = "MyStride"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/scordoan/Documents/SelfEducation/Swift/MyStride/MyStride/MyStride/Core/Network/APIClient.swift"
-                  timestampString = "553032118.627136"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (RxSwift.AnyObserver&lt;Any&gt;) -&gt; RxSwift.Disposable in MyStride.APIClient.signUp(userInfos: Swift.Array&lt;__ObjC.AWSCognitoIdentityUserAttributeType&gt;) -&gt; RxSwift.Observable&lt;Any&gt;"
-                  moduleName = "MyStride"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/scordoan/Documents/SelfEducation/Swift/MyStride/MyStride/MyStride/Core/Network/APIClient.swift"
-                  timestampString = "553032118.630571"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "30">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,12 +26,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyStride/Core/Network/APIClient.swift"
-            timestampString = "553366228.019887"
+            timestampString = "553516447.3781151"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "284"
-            endingLineNumber = "284"
-            landmarkName = "saveHandle(_:)"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "signUp(username:userInfos:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyStride/Core/Network/APIClient.swift"
+            timestampString = "553516447.378404"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "confirmSignUp(code:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyStride/Core/Network/APIClient.swift"
+            timestampString = "553516447.378666"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "requestSMSCode(phone:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyStride/Core/Network/APIClient.swift"
+            timestampString = "553516447.378906"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
+            landmarkName = "checkHandleAvailable(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

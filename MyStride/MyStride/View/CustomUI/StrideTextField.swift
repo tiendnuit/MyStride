@@ -56,6 +56,7 @@ class StrideTextField: UITextField {
     func prepareStaticUI() {
         //set default font
         self.font = R.font.montserratRegular(size: 16)
+        self.textColor = UIColor.StrideText
         
         self.layer.cornerRadius = self.frame.size.height/2
         self.layer.borderWidth = 2.5
@@ -76,7 +77,7 @@ class StrideTextField: UITextField {
             button.setAttributedTitle(attributedTitle, for: .normal)
             let size = attributedTitle.boundingRect(with: CGSize(width: self.frame.size.width, height: DEFAULT_BUTTON_SIZE), options: .usesLineFragmentOrigin, context: nil)
             button.frame = CGRect(x: 0, y: (self.frame.size.height-DEFAULT_BUTTON_SIZE)/2, width: size.width + padding, height: DEFAULT_BUTTON_SIZE)
-            button.titleEdgeInsets = UIEdgeInsetsMake(0, padding, 0, 0)
+            button.titleEdgeInsets = UIEdgeInsetsMake(-2, padding, 0, 0)
         }
         
         if let image = image {
@@ -143,20 +144,4 @@ class StrideTextField: UITextField {
     }
     
 }
-
-////MARK: - PhoneTextField
-//class PhoneTextField : StrideTextField {
-//
-//    override func prepareStaticUI() {
-//        super.prepareStaticUI()
-//
-//        setLeftButton(title: "US ▼")
-//    }
-//
-//    @objc fileprivate override func leftButtonClicked() {
-//
-//
-//    }
-//
-//}
 

@@ -30,37 +30,24 @@ class APIClient {
     static let shared = APIClient()
     
     var pool: AWSCognitoIdentityUserPool!
-    var username = "user_id-" + UUID().uuidString
+    var username: String?//"user_id-" + UUID().uuidString
     var currentUser:AWSCognitoIdentityUser? {
         get {
-            return self.pool.getUser(username)
+            return username != nil ? self.pool.getUser(username!) : nil
         }
     }
     var currentSession: String?
     var token: String?
     
     init() {
-        let credentialsProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: AppDefined.Amazon.PoolID)
-        credentialsProvider.invalidateCachedTemporaryCredentials()
-        let serviceConfiguration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: credentialsProvider)
-        let configuration = AWSCognitoIdentityUserPoolConfiguration(clientId: AppDefined.Amazon.ClientID, clientSecret: nil, poolId: AppDefined.Amazon.PoolID)
-        AWSCognitoIdentityUserPool.register(with: serviceConfiguration, userPoolConfiguration: configuration, forKey: AppDefined.Amazon.UserPoolsSignInProviderKey)
-
-        self.pool = AWSCognitoIdentityUserPool.init(forKey: AppDefined.Amazon.UserPoolsSignInProviderKey)
-        
-        //Setup Provider
-        credentialsProvider.invalidateCachedTemporaryCredentials()
-        AWSServiceManager.default().defaultServiceConfiguration = serviceConfiguration
-        AWSCognitoIdentityProvider.register(with: serviceConfiguration!, forKey: AppDefined.Amazon.UserPoolsSignInProviderKey)
-        
-        AWSLambdaInvoker.register(with: serviceConfiguration!, forKey: AppDefined.Amazon.AuthenticatedLambdaKey)
+        updateCredentials()
         
     }
     
     private func updateCredentials() {
         var credentialsProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: AppDefined.Amazon.PoolID)
         if let token = self.token {
-            let customProvider = CustomIdentityProvider(tokens: ["cognito-idp.us-east-1.amazonaws.com/us-east-1_YA7NmvRlY" : token])
+            let customProvider = CustomIdentityProvider(tokens: ["cognito-idp.us-east-1.amazonaws.com/us-east-1_CJAPdSDpg" : token])
             credentialsProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: AppDefined.Amazon.PoolID, identityProviderManager: customProvider)
         }
         credentialsProvider.invalidateCachedTemporaryCredentials()
@@ -68,11 +55,14 @@ class APIClient {
         let configuration = AWSCognitoIdentityUserPoolConfiguration(clientId: AppDefined.Amazon.ClientID, clientSecret: nil, poolId: AppDefined.Amazon.PoolID)
         AWSCognitoIdentityUserPool.register(with: serviceConfiguration, userPoolConfiguration: configuration, forKey: AppDefined.Amazon.UserPoolsSignInProviderKey)
         
+        self.pool = AWSCognitoIdentityUserPool.init(forKey: AppDefined.Amazon.UserPoolsSignInProviderKey)
+        
         //Setup Provider
         credentialsProvider.invalidateCachedTemporaryCredentials()
         AWSServiceManager.default().defaultServiceConfiguration = serviceConfiguration
         AWSCognitoIdentityProvider.register(with: serviceConfiguration!, forKey: AppDefined.Amazon.UserPoolsSignInProviderKey)
         
+        //Lambda
         AWSLambdaInvoker.register(with: serviceConfiguration!, forKey: AppDefined.Amazon.AuthenticatedLambdaKey)
     }
     
@@ -90,15 +80,15 @@ class APIClient {
     func clearUser() {
         self.token = nil
         self.currentSession = nil
-        self.pool.clearLastKnownUser()
-        self.pool.currentUser()?.signOut()
+        self.pool?.clearLastKnownUser()
+        self.pool?.currentUser()?.signOut()
     }
     
     //Signup (user registration)
-    func signUp(userInfos: [AWSCognitoIdentityUserAttributeType]) -> Observable<Any> {
-        username = "user_id-" + UUID().uuidString
+    func signUp(username: String, userInfos: [AWSCognitoIdentityUserAttributeType]) -> Observable<Any> {
+        self.username = username
         return Observable.create({ [unowned self] (observer) -> Disposable in
-            self.pool.signUp(self.username, password: "Stride@1234", userAttributes: userInfos, validationData: nil).continueWith { (task) -> Any? in
+            self.pool.signUp(username, password: "Stride@1234", userAttributes: userInfos, validationData: nil).continueWith { (task) -> Any? in
                 if let error = self.getError(task.error) {
                     observer.onError(error)
                     return nil
@@ -180,7 +170,9 @@ class APIClient {
     
     // Auth with SMS code
     func authWithSMSCode(_ code: String) -> Observable<Any> {
-
+        guard let username = username else {
+            return Observable.error(StrideError.InvalidCode)
+        }
         let response = AWSCognitoIdentityProviderRespondToAuthChallengeRequest()!
         response.challengeName = .customChallenge
         response.clientId = AppDefined.Amazon.ClientID

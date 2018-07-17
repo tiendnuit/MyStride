@@ -53,16 +53,7 @@ final class ConfirmationViewModel: ViewModelType {
                     .asDriverOnErrorJustComplete()
                     .mapToVoid()
             }
-        
-//        //Onboarding checking
-//        let onboardingStatus = input.checkOnboardingStatus
-//            .flatMap { (needCheck) -> SharedSequence<DriverSharingStrategy, Bool> in
-//                return (needCheck ? APIClient.shared.checkHandleAvailable("ScorDDDDOAAAAN") : Observable.just(true))
-//                    .trackActivity(activityIndicator)
-//                    .trackError(errorTracker)
-//                    .asDriverOnErrorJustComplete()
-//        }
-        
+
         return Output(continueTrigger: continueTrigger,
                       resendCodeTrigger: resendTrigger,
                       canContinue: canContinue,
@@ -85,38 +76,6 @@ final class ConfirmationViewModel: ViewModelType {
         })
     }
 
-    
-    func signUp(_ firstName: String, _ lastName: String, _ phoneNumber: String) -> Observable<(Any)> {
-        var userInfos = [AWSCognitoIdentityUserAttributeType]()
-        
-        let givenName = AWSCognitoIdentityUserAttributeType()!
-        givenName.name = "given_name"
-        givenName.value = firstName
-        userInfos.append(givenName)
-        
-        let familyName = AWSCognitoIdentityUserAttributeType()!
-        familyName.name = "family_name"
-        familyName.value = lastName
-        userInfos.append(familyName)
-        
-        let locale = AWSCognitoIdentityUserAttributeType()!
-        locale.name = "locale"
-        locale.value = Locale.current.currencySymbol ?? "US"
-        userInfos.append(locale)
-        
-        
-        let userDefaults = UserDefaults.standard
-        var country = Country.default
-        if let countryCode = userDefaults.string(forKey: AppDefined.UserDefault.LastSelectedCountryCode), let index = DataManager.shared.countries.index(where: {$0.countryCode == countryCode}) {
-            country = DataManager.shared.countries[index]
-        }
-        let phone = AWSCognitoIdentityUserAttributeType()
-        phone?.name = "phone_number"
-        phone?.value = "+\(country.phonePrefix)\(phoneNumber)"
-        userInfos.append(phone!)
-        
-        return APIClient.shared.signUp(userInfos: userInfos)
-    }
 }
 
 extension ConfirmationViewModel {

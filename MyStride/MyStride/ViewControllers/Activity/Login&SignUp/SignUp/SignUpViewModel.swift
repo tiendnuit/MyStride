@@ -70,6 +70,14 @@ final class SignUpViewModel: ViewModelType {
     }
     
     func signUp(_ firstName: String, _ lastName: String, _ phoneNumber: String) -> Observable<(Any)> {
+        //Get country
+        let userDefaults = UserDefaults.standard
+        var country = Country.default
+        if let countryCode = userDefaults.string(forKey: AppDefined.UserDefault.LastSelectedCountryCode), let index = DataManager.shared.countries.index(where: {$0.countryCode == countryCode}) {
+            country = DataManager.shared.countries[index]
+        }
+        
+        let phoneNo = "+\(country.phonePrefix)\(phoneNumber)"
         var userInfos = [AWSCognitoIdentityUserAttributeType]()
         
         let givenName = AWSCognitoIdentityUserAttributeType()!
@@ -84,21 +92,17 @@ final class SignUpViewModel: ViewModelType {
         
         let locale = AWSCognitoIdentityUserAttributeType()!
         locale.name = "locale"
-        locale.value = Locale.current.currencySymbol ?? "US"
+        locale.value = Locale.current.regionCode ?? "US"
         userInfos.append(locale)
         
         
-        let userDefaults = UserDefaults.standard
-        var country = Country.default
-        if let countryCode = userDefaults.string(forKey: AppDefined.UserDefault.LastSelectedCountryCode), let index = DataManager.shared.countries.index(where: {$0.countryCode == countryCode}) {
-            country = DataManager.shared.countries[index]
-        }
+        
         let phone = AWSCognitoIdentityUserAttributeType()
         phone?.name = "phone_number"
-        phone?.value = "+\(country.phonePrefix)\(phoneNumber)"
+        phone?.value = phoneNo
         userInfos.append(phone!)
 
-        return APIClient.shared.signUp(userInfos: userInfos)
+        return APIClient.shared.signUp(username: phoneNo, userInfos: userInfos)
     }
 }
 
